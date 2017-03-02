@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+        http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+    <key id="d0" for="node" attr.name="dialogue" attr.type="string"/>
+    <key id="d1" for="edge" attr.name="spoken" attr.type="string"/>
+    <graph id="G" edgedefault="directed"><node id="n1"><data key="d0">root</data></node>
+
+<node id="n2"><data key="d0">Hello! My name is Nehvy. I am a turtlebot, so I am very slow. Please start speaking 2 seconds after I finish talking. And try to speak in front of me. I can either deliver items or guide you to a room. What do you want me to do?</data></node>
+<edge source="n1" target="n2">
+<data key="d1">hi</data>
+</edge>
+<edge source="n1" target="n2">
+<data key="d1">hello</data>
+</edge>
+<edge source="n1" target="n2">
+<data key="d1">hey</data>
+</edge>
+<edge source="n1" target="n2">
+<data key="d1">greetings</data>
+</edge>
+<node id="n3"><data key="d0">Okay. Which room should I go? I can go to room 201 to 207.</data></node>
+<edge source="n2" target="n3">
+<data key="d1">deliver</data>
+</edge>
+<edge source="n2" target="n3">
+<data key="d1">guide</data>
+</edge>
+<edge source="n3" target="n4">
+<data key="d1">room</data>
+</edge>
+
+<node id="n4"><data key="d0">So you want me to # to room number *. Is this information correct?</data></node>
+
+<edge source="n4" target="n5">
+<data key="d1">yes</data>
+</edge>
+<edge source="n4" target="n6">
+<data key="d1">no</data>
+</edge>
+
+<node id="n5"><data key="d0">Hold on! Let me calculate the path. Here I go!</data></node>
+
+<node id="n6"><data key="d0">What would you like me to change? The task? Or the room number?</data></node>
+
+<edge source="n6" target="n4">
+<data key="d1">task</data>
+</edge>
+
+<edge source="n6" target="n3">
+<data key="d1">room</data>
+</edge></graph></graphml>

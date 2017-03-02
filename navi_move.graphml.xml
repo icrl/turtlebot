@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+        http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+    <key id="d0" for="node" attr.name="dialogue" attr.type="string"/>
+    <key id="d1" for="edge" attr.name="spoken" attr.type="string"/>
+    <graph id="G" edgedefault="directed">
+
+<node id="n1"><data key="d0">Hi, I'm Navi. I'm a member of Heather's lab. I am a turtlebot, so I am very slow. Please always face me while talking and you can start speaking four seconds after I finish talking. Are you ready?</data></node>
+<node id="n2"><data key="d0">I can draw a square, or dance, or you can command me to move around.  What do you want me to do?</data></node>
+<node id="n3"><data key="d0">Wheeeew I'm tired. I think I will stop here. Did you like it?</data></node>
+<node id="n4"><data key="d0">Would you like me to do something else?</data></node>
+<node id="n5"><data key="d0">Bye</data></node>
+<node id="n6"><data key="d0">I can move forward, backward, left, or right. Which way do you want me to move?</data></node>
+<edge source="n1" target="n2"><data key="d1">yes</data></edge>
+<edge source="n1" target="n5"><data key="d1">no</data></edge>
+<edge source="n2" target="n6"><data key="d1">voice</data></edge>
+<edge source="n2" target="n6"><data key="d1">command</data></edge>
+<edge source="n2" target="n6"><data key="d1">move</data></edge>
+<edge source="n6" target="n3"><data key="d1">back</data></edge>
+<edge source="n6" target="n3"><data key="d1">forward</data></edge>
+<edge source="n6" target="n3"><data key="d1">right</data></edge>
+<edge source="n6" target="n3"><data key="d1">left</data></edge>
+<edge source="n2" target="n3"><data key="d1">follow me</data></edge>
+<edge source="n2" target="n3"><data key="d1">square</data></edge>
+<edge source="n2" target="n3"><data key="d1">dance</data></edge>
+<edge source="n3" target="n4"><data key="d1">yes</data></edge>
+<edge source="n3" target="n5"><data key="d1">no</data></edge>
+<edge source="n4" target="n2"><data key="d1">yes</data></edge>
+<edge source="n4" target="n5"><data key="d1">no</data></edge></graph> </graphml>
