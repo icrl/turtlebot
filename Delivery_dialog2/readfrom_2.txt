@@ -1,0 +1,25 @@
+n1 = root
+n2 = Hello!  I am Nahvi, a turtlebot. What is your name?
+n3 = Nice to meet you! I am a member of Heather's lab. I can deliver items or guide you to rooms.  What would you like me to do?
+n4 = You want me to guide you.  Is that correct?
+n5 = You want me to deliver something.  Is that correct?
+n6 = What room do you want me to go to?
+n7 = So you want me to go to room *? Is this information correct?
+n8 = I'm sorry, I cannot go to that room.  I can only go to rooms two hundred one through two hundred seven.  Do you want to repeat the room number?
+n9 = Ok, let me calculate the path.  Here I go!
+end
+
+(HELLO|HI|HEY|SUP|GREETINGS)[TURTLEBOT|NAVI], n1, n2
+(MY NAME IS), n2, n3
+(DELIVER)[AN][ITEM], n3, n5
+[CAN YOU|PLEASE](GUIDE)[ME][TO A ROOM], n3, n4
+(YES|YEAH|YUP), n4, n6
+(NO|NOPE), n4, n3
+(YES|YEAH|YUP), n5, n6
+(NO|NOPE), n5, n3
+[ROOM](TWO)[HUNDRED|OH](ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN), n6, n7
+[ROOM](ONE|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE)[HUNDRED|OH][TWENTY|THIRTY|FORTY|FIFTY|SIXTY|SEVENTY|EIGHTY|NINETY][ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN], n6, n8
+(YES|YEAH|YUP), n8, n6
+(NO|NOPE), n8, n1
+(YES|YEAH|YUP), n7, n9
+(NO|NOPE), n7, n6
