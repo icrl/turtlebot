@@ -1,0 +1,21 @@
+n1 = root
+n2 = Hi, I'm Navi.  I'm a member of Heather's lab.  Are you ready to play with me?
+n3 = I can draw a square, or follow you, or dance, or you can command me to move around.  What do you want me to do?
+n4 = Did you enjoy it?
+n5 = Would you like me to do something else?
+n6 = Bye.
+n7 = I can move forward, backward, left or right. Which way do you want me to move?
+end
+
+(HI|HELLO|HEY)[TURTLEBOT], n1, n2
+(YES|YEAH|YUP), n2, n3
+(NO|NAH|NOPE), n2, n6
+[FOLLOW](VOICE)[COMMANDS], n3, n7
+[MOVE|GO](LEFT|RIGHT|FORWARD|BACK), n7, n4
+[DO A](DANCE), n3, n4
+[DRAW A](SQUARE), n3, n4
+[CAN YOU](FOLLOW ME), n3, n4
+(YES|YUP|YEAH), n4, n5
+(NO|NOPE|NAH), n4, n6
+(YES|YUP|YEAH), n5, n3
+(NO|NOPE|NAH), n5, n6

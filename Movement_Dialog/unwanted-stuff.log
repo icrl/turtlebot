@@ -1,0 +1,1784 @@
+INFO: cmd_ln.c(691): Parsing command line:
+pocketsphinx_continuous \
+	-inmic yes \
+	-jsgf grammar.jsgf \
+	-dict turtlebot_dic.dic 
+
+Current configuration:
+[NAME]		[DEFLT]		[VALUE]
+-adcdev				
+-agc		none		none
+-agcthresh	2.0		2.000000e+00
+-alpha		0.97		9.700000e-01
+-argfile			
+-ascale		20.0		2.000000e+01
+-aw		1		1
+-backtrace	no		no
+-beam		1e-48		1.000000e-48
+-bestpath	yes		yes
+-bestpathlw	9.5		9.500000e+00
+-bghist		no		no
+-ceplen		13		13
+-cmn		current		current
+-cmninit	8.0		8.0
+-compallsen	no		no
+-debug				0
+-dict				turtlebot_dic.dic
+-dictcase	no		no
+-dither		no		no
+-doublebw	no		no
+-ds		1		1
+-fdict				
+-feat		1s_c_d_dd	1s_c_d_dd
+-featparams			
+-fillprob	1e-8		1.000000e-08
+-frate		100		100
+-fsg				
+-fsgusealtpron	yes		yes
+-fsgusefiller	yes		yes
+-fwdflat	yes		yes
+-fwdflatbeam	1e-64		1.000000e-64
+-fwdflatefwid	4		4
+-fwdflatlw	8.5		8.500000e+00
+-fwdflatsfwin	25		25
+-fwdflatwbeam	7e-29		7.000000e-29
+-fwdtree	yes		yes
+-hmm				
+-infile				
+-input_endian	little		little
+-jsgf				grammar.jsgf
+-kdmaxbbi	-1		-1
+-kdmaxdepth	0		0
+-kdtree				
+-latsize	5000		5000
+-lda				
+-ldadim		0		0
+-lextreedump	0		0
+-lifter		0		0
+-lm				
+-lmctl				
+-lmname		default		default
+-logbase	1.0001		1.000100e+00
+-logfn				
+-logspec	no		no
+-lowerf		133.33334	1.333333e+02
+-lpbeam		1e-40		1.000000e-40
+-lponlybeam	7e-29		7.000000e-29
+-lw		6.5		6.500000e+00
+-maxhmmpf	-1		-1
+-maxnewoov	20		20
+-maxwpf		-1		-1
+-mdef				
+-mean				
+-mfclogdir			
+-min_endfr	0		0
+-mixw				
+-mixwfloor	0.0000001	1.000000e-07
+-mllr				
+-mmap		yes		yes
+-ncep		13		13
+-nfft		512		512
+-nfilt		40		40
+-nwpen		1.0		1.000000e+00
+-pbeam		1e-48		1.000000e-48
+-pip		1.0		1.000000e+00
+-pl_beam	1e-10		1.000000e-10
+-pl_pbeam	1e-5		1.000000e-05
+-pl_window	0		0
+-rawlogdir			
+-remove_dc	no		no
+-round_filters	yes		yes
+-samprate	16000		1.600000e+04
+-seed		-1		-1
+-sendump			
+-senlogdir			
+-senmgau			
+-silprob	0.005		5.000000e-03
+-smoothspec	no		no
+-svspec				
+-time		no		no
+-tmat				
+-tmatfloor	0.0001		1.000000e-04
+-topn		4		4
+-topn_beam	0		0
+-toprule			
+-transform	legacy		legacy
+-unit_area	yes		yes
+-upperf		6855.4976	6.855498e+03
+-usewdphones	no		no
+-uw		1.0		1.000000e+00
+-var				
+-varfloor	0.0001		1.000000e-04
+-varnorm	no		no
+-verbose	no		no
+-warp_params			
+-warp_type	inverse_linear	inverse_linear
+-wbeam		7e-29		7.000000e-29
+-wip		0.65		6.500000e-01
+-wlen		0.025625	2.562500e-02
+
+INFO: cmd_ln.c(691): Parsing command line:
+\
+	-nfilt 20 \
+	-lowerf 1 \
+	-upperf 4000 \
+	-wlen 0.025 \
+	-transform dct \
+	-round_filters no \
+	-remove_dc yes \
+	-svspec 0-12/13-25/26-38 \
+	-feat 1s_c_d_dd \
+	-agc none \
+	-cmn current \
+	-cmninit 56,-3,1 \
+	-varnorm no 
+
+Current configuration:
+[NAME]		[DEFLT]		[VALUE]
+-agc		none		none
+-agcthresh	2.0		2.000000e+00
+-alpha		0.97		9.700000e-01
+-ceplen		13		13
+-cmn		current		current
+-cmninit	8.0		56,-3,1
+-dither		no		no
+-doublebw	no		no
+-feat		1s_c_d_dd	1s_c_d_dd
+-frate		100		100
+-input_endian	little		little
+-lda				
+-ldadim		0		0
+-lifter		0		0
+-logspec	no		no
+-lowerf		133.33334	1.000000e+00
+-ncep		13		13
+-nfft		512		512
+-nfilt		40		20
+-remove_dc	no		yes
+-round_filters	yes		no
+-samprate	16000		1.600000e+04
+-seed		-1		-1
+-smoothspec	no		no
+-svspec				0-12/13-25/26-38
+-transform	legacy		dct
+-unit_area	yes		yes
+-upperf		6855.4976	4.000000e+03
+-varnorm	no		no
+-verbose	no		no
+-warp_params			
+-warp_type	inverse_linear	inverse_linear
+-wlen		0.025625	2.500000e-02
+
+INFO: acmod.c(246): Parsed model-specific feature parameters from /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/feat.params
+INFO: feat.c(713): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(142): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(167): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(517): Reading model definition: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/mdef
+INFO: mdef.c(528): Found byte-order mark BMDF, assuming this is a binary mdef file
+INFO: bin_mdef.c(336): Reading binary model definition: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/mdef
+INFO: bin_mdef.c(513): 50 CI-phone, 143047 CD-phone, 3 emitstate/phone, 150 CI-sen, 5150 Sen, 27135 Sen-Seq
+INFO: tmat.c(205): Reading HMM transition probability matrices: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/transition_matrices
+INFO: acmod.c(121): Attempting to use SCHMM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/means
+INFO: ms_gauden.c(292): 1 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/variances
+INFO: ms_gauden.c(292): 1 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(354): 0 variance values floored
+INFO: s2_semi_mgau.c(903): Loading senones from dump file /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/sendump
+INFO: s2_semi_mgau.c(927): BEGIN FILE FORMAT DESCRIPTION
+INFO: s2_semi_mgau.c(1022): Using memory-mapped I/O for senones
+INFO: s2_semi_mgau.c(1296): Maximum top-N: 4 Top-N beams: 0 0 0
+INFO: dict.c(317): Allocating 4137 * 32 bytes (129 KiB) for word entries
+INFO: dict.c(332): Reading main dictionary: turtlebot_dic.dic
+INFO: dict.c(211): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(335): 30 words read
+INFO: dict.c(341): Reading filler dictionary: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/noisedict
+INFO: dict.c(211): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(344): 11 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(404): Allocating 50^3 * 2 bytes (244 KiB) for word-initial triphones
+INFO: dict2pid.c(131): Allocated 60400 bytes (58 KiB) for word-final triphones
+INFO: dict2pid.c(195): Allocated 60400 bytes (58 KiB) for single-phone word triphones
+INFO: fsg_search.c(145): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: jsgf.c(581): Defined rule: <hello.g00000>
+INFO: jsgf.c(581): Defined rule: <hello.g00001>
+INFO: jsgf.c(581): Defined rule: <hello.0>
+INFO: jsgf.c(581): Defined rule: <hello.g00003>
+INFO: jsgf.c(581): Defined rule: <hello.1>
+INFO: jsgf.c(581): Defined rule: <hello.g00005>
+INFO: jsgf.c(581): Defined rule: <hello.2>
+INFO: jsgf.c(581): Defined rule: <hello.g00007>
+INFO: jsgf.c(581): Defined rule: <hello.g00008>
+INFO: jsgf.c(581): Defined rule: <hello.g00009>
+INFO: jsgf.c(581): Defined rule: <hello.3>
+INFO: jsgf.c(581): Defined rule: <hello.g00011>
+INFO: jsgf.c(581): Defined rule: <hello.g00012>
+INFO: jsgf.c(581): Defined rule: <hello.4>
+INFO: jsgf.c(581): Defined rule: <hello.g00014>
+INFO: jsgf.c(581): Defined rule: <hello.g00015>
+INFO: jsgf.c(581): Defined rule: <hello.5>
+INFO: jsgf.c(581): Defined rule: <hello.g00017>
+INFO: jsgf.c(581): Defined rule: <hello.g00018>
+INFO: jsgf.c(581): Defined rule: <hello.6>
+INFO: jsgf.c(581): Defined rule: <hello.g00020>
+INFO: jsgf.c(581): Defined rule: <hello.g00021>
+INFO: jsgf.c(581): Defined rule: <hello.7>
+INFO: jsgf.c(581): Defined rule: <hello.g00023>
+INFO: jsgf.c(581): Defined rule: <hello.8>
+INFO: jsgf.c(581): Defined rule: <hello.g00025>
+INFO: jsgf.c(581): Defined rule: <hello.9>
+INFO: jsgf.c(581): Defined rule: <hello.g00027>
+INFO: jsgf.c(581): Defined rule: <hello.10>
+INFO: jsgf.c(581): Defined rule: <hello.g00029>
+INFO: jsgf.c(581): Defined rule: <hello.11>
+INFO: jsgf.c(581): Defined rule: PUBLIC <hello.command>
+INFO: fsg_model.c(215): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 167 null transitions added
+INFO: fsg_model.c(421): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(441): Added 112 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++NOISE++ to FSG
+INFO: fsg_model.c(441): Added 112 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++BREATH++ to FSG
+INFO: fsg_model.c(441): Added 112 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++SMACK++ to FSG
+INFO: fsg_model.c(441): Added 112 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++COUGH++ to FSG
+INFO: fsg_model.c(441): Added 112 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++LAUGH++ to FSG
+INFO: fsg_model.c(441): Added 112 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++TONE++ to FSG
+INFO: fsg_model.c(441): Added 112 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++UH++ to FSG
+INFO: fsg_model.c(441): Added 112 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++UM++ to FSG
+INFO: fsg_model.c(441): Added 112 silence word transitions
+INFO: fsg_search.c(366): Added 4 alternate word transitions
+INFO: fsg_lextree.c(108): Allocated 11424 bytes (11 KiB) for left and right context phones
+INFO: fsg_lextree.c(253): 1159 HMM nodes in lextree (1074 leaves)
+INFO: fsg_lextree.c(255): Allocated 148352 bytes (144 KiB) for all lextree nodes
+INFO: fsg_lextree.c(258): Allocated 137472 bytes (134 KiB) for lextree leafnodes
+INFO: continuous.c(371): pocketsphinx_continuous COMPILED ON: Dec 22 2013, AT: 20:43:21
+
+INFO: cmn_prior.c(121): cmn_prior_update: from < 56.00 -3.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 70.11  0.51  0.83  2.24  1.52  0.72  0.38 -1.31 -1.29 -0.12 -0.28 -0.13  0.41 >
+INFO: fsg_search.c(1032): 735 frames, 35183 HMMs (47/fr), 35447 senones (48/fr), 34490 history entries (46/fr)
+
+INFO: fsg_search.c(1417): Start node HELLO(2).0:14:147
+INFO: fsg_search.c(1417): Start node HI.0:5:60
+INFO: fsg_search.c(1417): Start node HEY.0:5:139
+INFO: fsg_search.c(1417): Start node YEAH.0:5:734
+INFO: fsg_search.c(1417): Start node NO.0:5:17
+INFO: fsg_search.c(1417): Start node NAH.0:5:17
+INFO: fsg_search.c(1417): Start node DO.0:5:17
+INFO: fsg_search.c(1417): Start node YEAH.0:5:734
+INFO: fsg_search.c(1417): Start node NO.0:5:17
+INFO: fsg_search.c(1417): Start node NAH.0:5:17
+INFO: fsg_search.c(1417): Start node YEAH.0:5:734
+INFO: fsg_search.c(1417): Start node NO.0:5:17
+INFO: fsg_search.c(1417): Start node NAH.0:5:17
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1417): Start node <sil>.0:2:128
+INFO: fsg_search.c(1456): End node <sil>.727:729:734 (-803)
+INFO: fsg_search.c(1456): End node <sil>.727:729:734 (-803)
+INFO: fsg_search.c(1456): End node <sil>.727:729:734 (-803)
+INFO: fsg_search.c(1456): End node <sil>.727:729:734 (-803)
+INFO: fsg_search.c(1456): End node <sil>.727:729:734 (-803)
+INFO: fsg_search.c(1456): End node <sil>.727:729:734 (-803)
+INFO: fsg_search.c(1456): End node <sil>.727:729:734 (-803)
+INFO: fsg_search.c(1456): End node <sil>.727:729:734 (-803)
+INFO: fsg_search.c(1456): End node <sil>.727:729:734 (-803)
+INFO: fsg_search.c(1456): End node <sil>.727:729:734 (-803)
+INFO: fsg_search.c(1456): End node YEAH.0:5:734 (-1377)
+INFO: fsg_search.c(1456): End node YEAH.0:5:734 (-1377)
+INFO: fsg_search.c(1456): End node YEAH.0:5:734 (-1377)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.735
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:735:735) = -59517
+INFO: ps_lattice.c(1403): Joint P(O,S) = -70502 P(S|O) = -10985
+INFO: fsg_search.c(1032): 81 frames, 8471 HMMs (104/fr), 12499 senones (154/fr), 5924 history entries (73/fr)
+
+INFO: fsg_search.c(1417): Start node DRAW.0:15:16
+INFO: fsg_search.c(1417): Start node HELLO.0:11:33
+INFO: fsg_search.c(1417): Start node YES.0:10:24
+INFO: fsg_search.c(1417): Start node YES.0:10:24
+INFO: fsg_search.c(1417): Start node YES.0:10:24
+INFO: fsg_search.c(1417): Start node VOICE.0:9:24
+INFO: fsg_search.c(1417): Start node MOVE.0:8:80
+INFO: fsg_search.c(1417): Start node CAN(2).0:8:24
+INFO: fsg_search.c(1417): Start node HI.0:5:27
+INFO: fsg_search.c(1417): Start node HEY.0:5:30
+INFO: fsg_search.c(1417): Start node YEAH.0:5:27
+INFO: fsg_search.c(1417): Start node NO.0:5:24
+INFO: fsg_search.c(1417): Start node NAH.0:5:16
+INFO: fsg_search.c(1417): Start node GO.0:5:49
+INFO: fsg_search.c(1417): Start node DO.0:5:46
+INFO: fsg_search.c(1417): Start node YEAH.0:5:27
+INFO: fsg_search.c(1417): Start node NO.0:5:24
+INFO: fsg_search.c(1417): Start node NAH.0:5:16
+INFO: fsg_search.c(1417): Start node YEAH.0:5:27
+INFO: fsg_search.c(1417): Start node NO.0:5:24
+INFO: fsg_search.c(1417): Start node NAH.0:5:16
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1456): End node <sil>.77:79:80 (-840)
+INFO: fsg_search.c(1456): End node <sil>.77:79:80 (-840)
+INFO: fsg_search.c(1456): End node <sil>.77:79:80 (-840)
+INFO: fsg_search.c(1456): End node <sil>.74:78:80 (-1121)
+INFO: fsg_search.c(1456): End node <sil>.74:78:80 (-1121)
+INFO: fsg_search.c(1456): End node <sil>.74:78:80 (-1121)
+INFO: fsg_search.c(1456): End node <sil>.74:78:80 (-1121)
+INFO: fsg_search.c(1456): End node LEFT.56:69:80 (-2616)
+INFO: fsg_search.c(1456): End node RIGHT.54:62:80 (-1907)
+INFO: fsg_search.c(1456): End node BACK.52:60:80 (-1999)
+INFO: fsg_search.c(1456): End node MOVE.0:8:80 (-1789)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.81
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:81:81) = -91596
+INFO: ps_lattice.c(1403): Joint P(O,S) = -91596 P(S|O) = 0
+INFO: cmn_prior.c(121): cmn_prior_update: from < 71.11  0.65  0.62  1.98  1.27  0.57  0.31 -1.26 -1.25 -0.19 -0.36 -0.18  0.32 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 72.82  0.41  0.06  1.40  0.92  0.48  0.36 -1.13 -1.19 -0.30 -0.37 -0.14  0.38 >
+INFO: fsg_search.c(1032): 84 frames, 8869 HMMs (105/fr), 12061 senones (143/fr), 5255 history entries (62/fr)
+
+INFO: fsg_search.c(1417): Start node HELLO.0:11:39
+INFO: fsg_search.c(1417): Start node YES.0:8:14
+INFO: fsg_search.c(1417): Start node YUP.0:8:11
+INFO: fsg_search.c(1417): Start node NOPE.0:8:24
+INFO: fsg_search.c(1417): Start node MOVE.0:8:68
+INFO: fsg_search.c(1417): Start node DRAW.0:8:11
+INFO: fsg_search.c(1417): Start node YES.0:8:14
+INFO: fsg_search.c(1417): Start node YUP.0:8:11
+INFO: fsg_search.c(1417): Start node NOPE.0:8:24
+INFO: fsg_search.c(1417): Start node YES.0:8:14
+INFO: fsg_search.c(1417): Start node YUP.0:8:11
+INFO: fsg_search.c(1417): Start node NOPE.0:8:24
+INFO: fsg_search.c(1417): Start node HI.0:5:21
+INFO: fsg_search.c(1417): Start node HEY.0:5:20
+INFO: fsg_search.c(1417): Start node YEAH.0:5:83
+INFO: fsg_search.c(1417): Start node NO.0:5:75
+INFO: fsg_search.c(1417): Start node NAH.0:5:24
+INFO: fsg_search.c(1417): Start node GO.0:5:39
+INFO: fsg_search.c(1417): Start node DO.0:5:47
+INFO: fsg_search.c(1417): Start node YEAH.0:5:83
+INFO: fsg_search.c(1417): Start node NO.0:5:75
+INFO: fsg_search.c(1417): Start node NAH.0:5:24
+INFO: fsg_search.c(1417): Start node YEAH.0:5:83
+INFO: fsg_search.c(1417): Start node NO.0:5:75
+INFO: fsg_search.c(1417): Start node NAH.0:5:24
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-827)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-827)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-827)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-827)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-827)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-827)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-827)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-827)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-827)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-827)
+INFO: fsg_search.c(1456): End node YEAH.0:5:83 (-1053)
+INFO: fsg_search.c(1456): End node YEAH.0:5:83 (-1053)
+INFO: fsg_search.c(1456): End node YEAH.0:5:83 (-1053)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.84
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:84:84) = -42928
+INFO: ps_lattice.c(1403): Joint P(O,S) = -53913 P(S|O) = -10985
+INFO: cmn_prior.c(121): cmn_prior_update: from < 72.82  0.41  0.06  1.40  0.92  0.48  0.36 -1.13 -1.19 -0.30 -0.37 -0.14  0.38 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 73.50  0.10 -0.19  1.20  0.87  0.37  0.28 -1.12 -1.15 -0.25 -0.36 -0.13  0.44 >
+INFO: fsg_search.c(1032): 76 frames, 15946 HMMs (209/fr), 18120 senones (238/fr), 12907 history entries (169/fr)
+
+INFO: fsg_search.c(1417): Start node DO.0:5:16
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1456): End node A.73:75:75 (-573)
+INFO: fsg_search.c(1456): End node <sil>.68:75:75 (-1352)
+INFO: fsg_search.c(1456): End node <sil>.70:72:75 (-806)
+INFO: fsg_search.c(1456): End node <sil>.70:72:75 (-806)
+INFO: fsg_search.c(1456): End node <sil>.70:72:75 (-806)
+INFO: fsg_search.c(1456): End node <sil>.70:72:75 (-806)
+INFO: fsg_search.c(1456): End node <sil>.70:72:75 (-806)
+INFO: fsg_search.c(1456): End node <sil>.70:72:75 (-806)
+INFO: fsg_search.c(1456): End node <sil>.70:72:75 (-806)
+INFO: fsg_search.c(1456): End node <sil>.70:72:75 (-806)
+INFO: fsg_search.c(1456): End node <sil>.70:72:75 (-806)
+INFO: fsg_search.c(1456): End node <sil>.69:71:75 (-814)
+INFO: fsg_search.c(1456): End node <sil>.69:71:75 (-814)
+INFO: fsg_search.c(1456): End node <sil>.69:71:75 (-814)
+INFO: fsg_search.c(1456): End node <sil>.69:71:75 (-814)
+INFO: fsg_search.c(1456): End node <sil>.69:71:75 (-814)
+INFO: fsg_search.c(1456): End node <sil>.69:71:75 (-814)
+INFO: fsg_search.c(1456): End node <sil>.69:71:75 (-814)
+INFO: fsg_search.c(1456): End node <sil>.69:71:75 (-814)
+INFO: fsg_search.c(1456): End node <sil>.69:71:75 (-814)
+INFO: fsg_search.c(1456): End node <sil>.69:71:75 (-814)
+INFO: fsg_search.c(1456): End node <sil>.68:70:75 (-800)
+INFO: fsg_search.c(1456): End node <sil>.68:70:75 (-800)
+INFO: fsg_search.c(1456): End node <sil>.68:70:75 (-800)
+INFO: fsg_search.c(1456): End node <sil>.68:70:75 (-800)
+INFO: fsg_search.c(1456): End node HELLO.58:70:75 (-2167)
+INFO: fsg_search.c(1456): End node <sil>.68:70:75 (-800)
+INFO: fsg_search.c(1456): End node <sil>.68:70:75 (-800)
+INFO: fsg_search.c(1456): End node YES.57:65:75 (-1681)
+INFO: fsg_search.c(1456): End node YUP.57:65:75 (-1705)
+INFO: fsg_search.c(1456): End node YES.57:65:75 (-1681)
+INFO: fsg_search.c(1456): End node YUP.57:65:75 (-1705)
+INFO: fsg_search.c(1456): End node YES.57:65:75 (-1681)
+INFO: fsg_search.c(1456): End node YUP.57:65:75 (-1705)
+INFO: fsg_search.c(1456): End node GO.58:63:75 (-1160)
+INFO: fsg_search.c(1456): End node DO.58:63:75 (-1078)
+INFO: fsg_search.c(1456): End node CAN.55:63:75 (-1725)
+INFO: fsg_search.c(1456): End node HEY.48:53:75 (-1049)
+INFO: fsg_search.c(1456): End node YOU.45:50:75 (-1184)
+INFO: fsg_search.c(1456): End node NO.30:39:75 (-1699)
+INFO: fsg_search.c(1456): End node NO.30:39:75 (-1699)
+INFO: fsg_search.c(1456): End node NO.30:39:75 (-1699)
+INFO: fsg_search.c(1456): End node MOVE.29:37:75 (-1510)
+INFO: fsg_search.c(1456): End node YEAH.29:34:75 (-1087)
+INFO: fsg_search.c(1456): End node YEAH.29:34:75 (-1087)
+INFO: fsg_search.c(1456): End node YEAH.29:34:75 (-1087)
+INFO: fsg_search.c(1456): End node GO.26:31:75 (-1089)
+INFO: fsg_search.c(1456): End node HI.23:28:75 (-1092)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1456): End node <sil>.0:2:75 (-749)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.76
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:76:76) = -54272
+INFO: ps_lattice.c(1403): Joint P(O,S) = -54272 P(S|O) = 0
+INFO: cmn_prior.c(121): cmn_prior_update: from < 73.50  0.10 -0.19  1.20  0.87  0.37  0.28 -1.12 -1.15 -0.25 -0.36 -0.13  0.44 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 73.97 -0.01 -0.26  1.11  0.83  0.28  0.15 -1.14 -1.17 -0.27 -0.39 -0.12  0.46 >
+INFO: fsg_search.c(1032): 74 frames, 15442 HMMs (208/fr), 17691 senones (239/fr), 12072 history entries (163/fr)
+
+INFO: fsg_search.c(1417): Start node DO.0:5:16
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:65
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:65
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:66
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:66
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:67
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1456): End node <sil>.71:73:73 (-817)
+INFO: fsg_search.c(1456): End node <sil>.71:73:73 (-817)
+INFO: fsg_search.c(1456): End node <sil>.71:73:73 (-817)
+INFO: fsg_search.c(1456): End node <sil>.71:73:73 (-817)
+INFO: fsg_search.c(1456): End node <sil>.71:73:73 (-817)
+INFO: fsg_search.c(1456): End node <sil>.71:73:73 (-817)
+INFO: fsg_search.c(1456): End node <sil>.71:73:73 (-817)
+INFO: fsg_search.c(1456): End node <sil>.71:73:73 (-817)
+INFO: fsg_search.c(1456): End node <sil>.71:73:73 (-817)
+INFO: fsg_search.c(1456): End node A.71:73:73 (-569)
+INFO: fsg_search.c(1456): End node <sil>.71:73:73 (-817)
+INFO: fsg_search.c(1456): End node <sil>.66:68:73 (-817)
+INFO: fsg_search.c(1456): End node <sil>.65:67:73 (-820)
+INFO: fsg_search.c(1456): End node <sil>.65:67:73 (-820)
+INFO: fsg_search.c(1456): End node <sil>.65:67:73 (-820)
+INFO: fsg_search.c(1456): End node <sil>.65:67:73 (-820)
+INFO: fsg_search.c(1456): End node YOU.61:66:73 (-913)
+INFO: fsg_search.c(1456): End node YEAH.48:54:73 (-1213)
+INFO: fsg_search.c(1456): End node YEAH.48:54:73 (-1213)
+INFO: fsg_search.c(1456): End node YEAH.48:54:73 (-1213)
+INFO: fsg_search.c(1456): End node DO.45:50:73 (-1163)
+INFO: fsg_search.c(1456): End node MOVE.41:49:73 (-1690)
+INFO: fsg_search.c(1456): End node CAN(2).41:49:73 (-1616)
+INFO: fsg_search.c(1456): End node A(2).42:48:73 (-1096)
+INFO: fsg_search.c(1456): End node HEY.40:45:73 (-1195)
+INFO: fsg_search.c(1456): End node HI.22:27:73 (-1200)
+INFO: fsg_search.c(1456): End node GO.20:25:73 (-1219)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.74
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:74:74) = -198119
+INFO: ps_lattice.c(1403): Joint P(O,S) = -200549 P(S|O) = -2430
+INFO: fsg_search.c(1032): 81 frames, 15835 HMMs (195/fr), 18632 senones (230/fr), 12178 history entries (150/fr)
+
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:76
+INFO: fsg_search.c(1417): Start node <sil>.0:2:77
+INFO: fsg_search.c(1456): End node <sil>.78:80:80 (-908)
+INFO: fsg_search.c(1456): End node <sil>.78:80:80 (-908)
+INFO: fsg_search.c(1456): End node <sil>.78:80:80 (-908)
+INFO: fsg_search.c(1456): End node <sil>.78:80:80 (-908)
+INFO: fsg_search.c(1456): End node <sil>.78:80:80 (-908)
+INFO: fsg_search.c(1456): End node <sil>.78:80:80 (-908)
+INFO: fsg_search.c(1456): End node <sil>.78:80:80 (-908)
+INFO: fsg_search.c(1456): End node <sil>.78:80:80 (-908)
+INFO: fsg_search.c(1456): End node <sil>.77:79:80 (-934)
+INFO: fsg_search.c(1456): End node <sil>.77:79:80 (-934)
+INFO: fsg_search.c(1456): End node GO.68:73:80 (-1111)
+INFO: fsg_search.c(1456): End node YOU.66:71:80 (-890)
+INFO: fsg_search.c(1456): End node NO.65:70:80 (-1239)
+INFO: fsg_search.c(1456): End node NO.65:70:80 (-1239)
+INFO: fsg_search.c(1456): End node NO.65:70:80 (-1239)
+INFO: fsg_search.c(1456): End node MOVE.56:64:80 (-1790)
+INFO: fsg_search.c(1456): End node A(2).60:62:80 (-458)
+INFO: fsg_search.c(1456): End node YES.53:61:80 (-1751)
+INFO: fsg_search.c(1456): End node YES.53:61:80 (-1751)
+INFO: fsg_search.c(1456): End node YES.53:61:80 (-1751)
+INFO: fsg_search.c(1456): End node YEAH.53:59:80 (-1226)
+INFO: fsg_search.c(1456): End node YEAH.53:59:80 (-1226)
+INFO: fsg_search.c(1456): End node YEAH.53:59:80 (-1226)
+INFO: fsg_search.c(1456): End node CAN(2).50:58:80 (-1563)
+INFO: fsg_search.c(1456): End node HEY.50:55:80 (-928)
+INFO: fsg_search.c(1456): End node DO.50:55:80 (-1186)
+INFO: fsg_search.c(1456): End node GO.49:54:80 (-1156)
+INFO: fsg_search.c(1456): End node HI.23:28:80 (-1031)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.81
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:81:81) = -200089
+INFO: ps_lattice.c(1403): Joint P(O,S) = -200089 P(S|O) = 0
+INFO: cmn_prior.c(121): cmn_prior_update: from < 74.21 -0.18 -0.33  1.11  0.88  0.19  0.10 -1.15 -1.17 -0.27 -0.42 -0.11  0.48 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 75.36 -0.25 -0.44  0.83  0.63  0.07 -0.11 -1.24 -1.20 -0.31 -0.50 -0.10  0.42 >
+INFO: fsg_search.c(1032): 74 frames, 12320 HMMs (166/fr), 14418 senones (194/fr), 9224 history entries (124/fr)
+
+INFO: fsg_search.c(1417): Start node DRAW.0:21:22
+INFO: fsg_search.c(1417): Start node HI.0:5:11
+INFO: fsg_search.c(1417): Start node HEY.0:5:18
+INFO: fsg_search.c(1417): Start node YEAH.0:5:12
+INFO: fsg_search.c(1417): Start node NO.0:5:17
+INFO: fsg_search.c(1417): Start node NAH.0:5:11
+INFO: fsg_search.c(1417): Start node GO.0:5:44
+INFO: fsg_search.c(1417): Start node DO.0:5:17
+INFO: fsg_search.c(1417): Start node YEAH.0:5:12
+INFO: fsg_search.c(1417): Start node NO.0:5:17
+INFO: fsg_search.c(1417): Start node NAH.0:5:11
+INFO: fsg_search.c(1417): Start node YEAH.0:5:12
+INFO: fsg_search.c(1417): Start node NO.0:5:17
+INFO: fsg_search.c(1417): Start node NAH.0:5:11
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1456): End node <sil>.53:69:73 (-2477)
+INFO: fsg_search.c(1456): End node <sil>.53:69:73 (-2477)
+INFO: fsg_search.c(1456): End node <sil>.53:69:73 (-2477)
+INFO: fsg_search.c(1456): End node <sil>.53:66:73 (-2144)
+INFO: fsg_search.c(1456): End node <sil>.53:66:73 (-2144)
+INFO: fsg_search.c(1456): End node <sil>.53:66:73 (-2144)
+INFO: fsg_search.c(1456): End node <sil>.53:66:73 (-2144)
+INFO: fsg_search.c(1456): End node <sil>.53:66:73 (-2144)
+INFO: fsg_search.c(1456): End node <sil>.53:66:73 (-2144)
+INFO: fsg_search.c(1456): End node <sil>.58:60:73 (-842)
+INFO: fsg_search.c(1456): End node <sil>.58:60:73 (-842)
+INFO: fsg_search.c(1456): End node <sil>.58:60:73 (-842)
+INFO: fsg_search.c(1456): End node <sil>.58:60:73 (-842)
+INFO: fsg_search.c(1456): End node <sil>.58:60:73 (-842)
+INFO: fsg_search.c(1456): End node <sil>.58:60:73 (-842)
+INFO: fsg_search.c(1456): End node <sil>.58:60:73 (-842)
+INFO: fsg_search.c(1456): End node <sil>.58:60:73 (-842)
+INFO: fsg_search.c(1456): End node <sil>.58:60:73 (-842)
+INFO: fsg_search.c(1456): End node <sil>.58:60:73 (-842)
+INFO: fsg_search.c(1456): End node YES.21:36:73 (-2692)
+INFO: fsg_search.c(1456): End node YES.21:36:73 (-2692)
+INFO: fsg_search.c(1456): End node YES.21:36:73 (-2692)
+INFO: fsg_search.c(1456): End node YEAH.21:33:73 (-2080)
+INFO: fsg_search.c(1456): End node YEAH.21:33:73 (-2080)
+INFO: fsg_search.c(1456): End node YEAH.21:33:73 (-2080)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.74
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:74:74) = -268857
+INFO: ps_lattice.c(1403): Joint P(O,S) = -280268 P(S|O) = -11411
+INFO: cmn_prior.c(121): cmn_prior_update: from < 75.79 -0.14 -0.88  0.38  0.41  0.43  0.17 -0.90 -1.10 -0.43 -0.55 -0.06  0.37 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 75.86 -0.14 -0.94  0.30  0.38  0.49  0.24 -0.88 -1.15 -0.47 -0.56 -0.00  0.38 >
+INFO: fsg_search.c(1032): 215 frames, 22985 HMMs (106/fr), 21767 senones (101/fr), 14799 history entries (68/fr)
+
+INFO: fsg_search.c(1417): Start node MOVE.0:20:20
+INFO: fsg_search.c(1417): Start node GO.0:5:42
+INFO: fsg_search.c(1417): Start node DO.0:5:21
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1456): End node <sil>.206:212:214 (-1216)
+INFO: fsg_search.c(1456): End node TURTLEBOT.135:166:214 (-5406)
+INFO: fsg_search.c(1456): End node <sil>.55:58:214 (-861)
+INFO: fsg_search.c(1456): End node <sil>.55:58:214 (-861)
+INFO: fsg_search.c(1456): End node <sil>.55:58:214 (-861)
+INFO: fsg_search.c(1456): End node <sil>.55:58:214 (-861)
+INFO: fsg_search.c(1456): End node <sil>.55:58:214 (-861)
+INFO: fsg_search.c(1456): End node <sil>.55:58:214 (-861)
+INFO: fsg_search.c(1456): End node <sil>.55:58:214 (-861)
+INFO: fsg_search.c(1456): End node <sil>.55:58:214 (-861)
+INFO: fsg_search.c(1456): End node <sil>.55:58:214 (-861)
+INFO: fsg_search.c(1456): End node <sil>.55:57:214 (-790)
+INFO: fsg_search.c(1456): End node <sil>.55:57:214 (-790)
+INFO: fsg_search.c(1456): End node <sil>.55:57:214 (-790)
+INFO: fsg_search.c(1456): End node <sil>.55:57:214 (-790)
+INFO: fsg_search.c(1456): End node <sil>.55:57:214 (-790)
+INFO: fsg_search.c(1456): End node <sil>.55:57:214 (-790)
+INFO: fsg_search.c(1456): End node <sil>.55:57:214 (-790)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.215
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:215:215) = -426212
+INFO: ps_lattice.c(1403): Joint P(O,S) = -432844 P(S|O) = -6632
+INFO: cmn_prior.c(121): cmn_prior_update: from < 75.86 -0.14 -0.94  0.30  0.38  0.49  0.24 -0.88 -1.15 -0.47 -0.56 -0.00  0.38 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 76.10 -0.11 -1.24  0.13  0.37  0.63  0.37 -0.72 -1.12 -0.56 -0.54  0.06  0.39 >
+INFO: fsg_search.c(1032): 77 frames, 12131 HMMs (157/fr), 13606 senones (176/fr), 7779 history entries (101/fr)
+
+INFO: fsg_search.c(1417): Start node GO.0:5:52
+INFO: fsg_search.c(1417): Start node DO.0:5:37
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:37
+INFO: fsg_search.c(1417): Start node <sil>.0:2:37
+INFO: fsg_search.c(1417): Start node <sil>.0:2:37
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:37
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:37
+INFO: fsg_search.c(1417): Start node <sil>.0:2:37
+INFO: fsg_search.c(1417): Start node <sil>.0:2:37
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:39
+INFO: fsg_search.c(1456): End node <sil>.67:74:76 (-1283)
+INFO: fsg_search.c(1456): End node <sil>.67:74:76 (-1283)
+INFO: fsg_search.c(1456): End node <sil>.67:74:76 (-1283)
+INFO: fsg_search.c(1456): End node <sil>.67:74:76 (-1283)
+INFO: fsg_search.c(1456): End node <sil>.67:74:76 (-1283)
+INFO: fsg_search.c(1456): End node <sil>.67:74:76 (-1283)
+INFO: fsg_search.c(1456): End node <sil>.67:74:76 (-1283)
+INFO: fsg_search.c(1456): End node <sil>.67:74:76 (-1283)
+INFO: fsg_search.c(1456): End node <sil>.67:74:76 (-1283)
+INFO: fsg_search.c(1456): End node <sil>.68:71:76 (-894)
+INFO: fsg_search.c(1456): End node <sil>.68:71:76 (-894)
+INFO: fsg_search.c(1456): End node <sil>.68:71:76 (-894)
+INFO: fsg_search.c(1456): End node LEFT.23:70:76 (-6948)
+INFO: fsg_search.c(1456): End node DANCE.38:70:76 (-4924)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node <sil>.67:69:76 (-787)
+INFO: fsg_search.c(1456): End node BACK.21:31:76 (-2015)
+INFO: fsg_search.c(1456): End node YEAH.23:28:76 (-1131)
+INFO: fsg_search.c(1456): End node YEAH.23:28:76 (-1131)
+INFO: fsg_search.c(1456): End node YEAH.23:28:76 (-1131)
+INFO: fsg_search.c(1456): End node NO.22:27:76 (-1114)
+INFO: fsg_search.c(1456): End node NO.22:27:76 (-1114)
+INFO: fsg_search.c(1456): End node NO.22:27:76 (-1114)
+INFO: fsg_search.c(1456): End node HI.21:26:76 (-1082)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.77
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:77:77) = -215558
+INFO: ps_lattice.c(1403): Joint P(O,S) = -228044 P(S|O) = -12486
+INFO: cmn_prior.c(121): cmn_prior_update: from < 76.10 -0.11 -1.24  0.13  0.37  0.63  0.37 -0.72 -1.12 -0.56 -0.54  0.06  0.39 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 76.55 -0.13 -1.16  0.17  0.27  0.48  0.21 -0.84 -1.23 -0.63 -0.61  0.07  0.40 >
+INFO: fsg_search.c(1032): 84 frames, 13627 HMMs (162/fr), 16105 senones (191/fr), 9645 history entries (114/fr)
+
+INFO: fsg_search.c(1417): Start node DO.0:5:16
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1456): End node A.81:83:83 (-517)
+INFO: fsg_search.c(1456): End node <sil>.80:82:83 (-855)
+INFO: fsg_search.c(1456): End node <sil>.80:82:83 (-855)
+INFO: fsg_search.c(1456): End node <sil>.80:82:83 (-855)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-826)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-826)
+INFO: fsg_search.c(1456): End node <sil>.74:76:83 (-826)
+INFO: fsg_search.c(1456): End node <sil>.73:75:83 (-842)
+INFO: fsg_search.c(1456): End node <sil>.73:75:83 (-842)
+INFO: fsg_search.c(1456): End node <sil>.73:75:83 (-842)
+INFO: fsg_search.c(1456): End node <sil>.73:75:83 (-842)
+INFO: fsg_search.c(1456): End node <sil>.73:75:83 (-842)
+INFO: fsg_search.c(1456): End node <sil>.73:75:83 (-842)
+INFO: fsg_search.c(1456): End node <sil>.73:75:83 (-842)
+INFO: fsg_search.c(1456): End node <sil>.73:75:83 (-842)
+INFO: fsg_search.c(1456): End node <sil>.73:75:83 (-842)
+INFO: fsg_search.c(1456): End node <sil>.73:75:83 (-842)
+INFO: fsg_search.c(1456): End node YOU.48:53:83 (-892)
+INFO: fsg_search.c(1456): End node CAN.24:44:83 (-3541)
+INFO: fsg_search.c(1456): End node DO.36:41:83 (-1054)
+INFO: fsg_search.c(1456): End node YOU.26:31:83 (-1018)
+INFO: fsg_search.c(1456): End node YEAH.22:30:83 (-1832)
+INFO: fsg_search.c(1456): End node YEAH.22:30:83 (-1832)
+INFO: fsg_search.c(1456): End node YEAH.22:30:83 (-1832)
+INFO: fsg_search.c(1456): End node MOVE.17:25:83 (-1731)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.84
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:84:84) = -203675
+INFO: ps_lattice.c(1403): Joint P(O,S) = -204083 P(S|O) = -408
+INFO: fsg_search.c(1032): 96 frames, 17516 HMMs (182/fr), 19928 senones (207/fr), 12309 history entries (128/fr)
+
+INFO: fsg_search.c(1417): Start node DO.0:5:18
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:69
+INFO: fsg_search.c(1417): Start node <sil>.0:2:69
+INFO: fsg_search.c(1417): Start node <sil>.0:2:69
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:69
+INFO: fsg_search.c(1417): Start node <sil>.0:2:69
+INFO: fsg_search.c(1417): Start node <sil>.0:2:69
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:69
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1417): Start node <sil>.0:2:70
+INFO: fsg_search.c(1456): End node <sil>.93:95:95 (-738)
+INFO: fsg_search.c(1456): End node YOU.80:85:95 (-1115)
+INFO: fsg_search.c(1456): End node CAN.41:52:95 (-2020)
+INFO: fsg_search.c(1456): End node YEAH.16:21:95 (-1212)
+INFO: fsg_search.c(1456): End node YEAH.16:21:95 (-1212)
+INFO: fsg_search.c(1456): End node YEAH.16:21:95 (-1212)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.96
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:96:96) = -163862
+INFO: ps_lattice.c(1403): Joint P(O,S) = -174847 P(S|O) = -10985
+INFO: fsg_search.c(1032): 96 frames, 14803 HMMs (154/fr), 16296 senones (169/fr), 8593 history entries (89/fr)
+
+INFO: fsg_search.c(1417): Start node GO.0:5:12
+INFO: fsg_search.c(1417): Start node DO.0:5:13
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:55
+INFO: fsg_search.c(1456): End node <sil>.66:75:95 (-1633)
+INFO: fsg_search.c(1456): End node <sil>.69:74:95 (-1051)
+INFO: fsg_search.c(1456): End node <sil>.70:73:95 (-820)
+INFO: fsg_search.c(1456): End node <sil>.70:73:95 (-820)
+INFO: fsg_search.c(1456): End node <sil>.70:73:95 (-820)
+INFO: fsg_search.c(1456): End node <sil>.70:73:95 (-820)
+INFO: fsg_search.c(1456): End node <sil>.70:73:95 (-820)
+INFO: fsg_search.c(1456): End node <sil>.70:73:95 (-820)
+INFO: fsg_search.c(1456): End node <sil>.66:73:95 (-1431)
+INFO: fsg_search.c(1456): End node <sil>.66:73:95 (-1431)
+INFO: fsg_search.c(1456): End node <sil>.69:71:95 (-783)
+INFO: fsg_search.c(1456): End node <sil>.69:71:95 (-783)
+INFO: fsg_search.c(1456): End node <sil>.69:71:95 (-783)
+INFO: fsg_search.c(1456): End node <sil>.69:71:95 (-783)
+INFO: fsg_search.c(1456): End node <sil>.69:71:95 (-783)
+INFO: fsg_search.c(1456): End node <sil>.69:71:95 (-783)
+INFO: fsg_search.c(1456): End node <sil>.69:71:95 (-783)
+INFO: fsg_search.c(1456): End node <sil>.69:71:95 (-783)
+INFO: fsg_search.c(1456): End node <sil>.69:71:95 (-783)
+INFO: fsg_search.c(1456): End node <sil>.69:71:95 (-783)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.96
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:96:96) = -525329
+INFO: ps_lattice.c(1403): Joint P(O,S) = -537753 P(S|O) = -12424
+INFO: fsg_search.c(1032): 97 frames, 15393 HMMs (158/fr), 17060 senones (175/fr), 10097 history entries (104/fr)
+
+INFO: fsg_search.c(1417): Start node DO.0:5:16
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1456): End node <sil>.70:78:96 (-1418)
+INFO: fsg_search.c(1456): End node <sil>.70:78:96 (-1418)
+INFO: fsg_search.c(1456): End node <sil>.70:76:96 (-1252)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.74:76:96 (-756)
+INFO: fsg_search.c(1456): End node <sil>.70:75:96 (-1170)
+INFO: fsg_search.c(1456): End node <sil>.70:73:96 (-933)
+INFO: fsg_search.c(1456): End node <sil>.70:73:96 (-933)
+INFO: fsg_search.c(1456): End node <sil>.70:72:96 (-812)
+INFO: fsg_search.c(1456): End node <sil>.70:72:96 (-812)
+INFO: fsg_search.c(1456): End node <sil>.70:72:96 (-812)
+INFO: fsg_search.c(1456): End node <sil>.70:72:96 (-812)
+INFO: fsg_search.c(1456): End node <sil>.70:72:96 (-812)
+INFO: fsg_search.c(1456): End node <sil>.70:72:96 (-812)
+INFO: fsg_search.c(1456): End node <sil>.70:72:96 (-812)
+INFO: fsg_search.c(1456): End node <sil>.70:72:96 (-812)
+INFO: fsg_search.c(1456): End node <sil>.70:72:96 (-812)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.97
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:97:97) = -522778
+INFO: ps_lattice.c(1403): Joint P(O,S) = -532580 P(S|O) = -9802
+INFO: cmn_prior.c(121): cmn_prior_update: from < 76.75 -0.18 -1.01  0.17  0.18  0.39  0.14 -0.95 -1.23 -0.69 -0.64  0.06  0.36 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 77.45 -0.77 -0.63 -0.08 -0.06  0.26  0.21 -0.88 -1.03 -0.82 -0.60  0.02  0.19 >
+INFO: fsg_search.c(1032): 98 frames, 12304 HMMs (125/fr), 14491 senones (147/fr), 6749 history entries (68/fr)
+
+INFO: fsg_search.c(1417): Start node YES.0:37:82
+INFO: fsg_search.c(1417): Start node YES.0:37:82
+INFO: fsg_search.c(1417): Start node YES.0:37:82
+INFO: fsg_search.c(1417): Start node MOVE.0:16:30
+INFO: fsg_search.c(1417): Start node DRAW.0:15:44
+INFO: fsg_search.c(1417): Start node CAN(2).0:13:29
+INFO: fsg_search.c(1417): Start node YEAH.0:5:85
+INFO: fsg_search.c(1417): Start node GO.0:5:59
+INFO: fsg_search.c(1417): Start node DO.0:5:74
+INFO: fsg_search.c(1417): Start node YEAH.0:5:85
+INFO: fsg_search.c(1417): Start node YEAH.0:5:85
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:21
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:21
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:23
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1456): End node <sil>.63:74:97 (-1940)
+INFO: fsg_search.c(1456): End node <sil>.63:74:97 (-1940)
+INFO: fsg_search.c(1456): End node <sil>.69:73:97 (-1049)
+INFO: fsg_search.c(1456): End node <sil>.69:73:97 (-1049)
+INFO: fsg_search.c(1456): End node <sil>.69:73:97 (-1049)
+INFO: fsg_search.c(1456): End node <sil>.69:73:97 (-1049)
+INFO: fsg_search.c(1456): End node <sil>.69:73:97 (-1049)
+INFO: fsg_search.c(1456): End node <sil>.69:73:97 (-1049)
+INFO: fsg_search.c(1456): End node <sil>.69:71:97 (-850)
+INFO: fsg_search.c(1456): End node <sil>.69:71:97 (-850)
+INFO: fsg_search.c(1456): End node <sil>.69:71:97 (-850)
+INFO: fsg_search.c(1456): End node <sil>.62:71:97 (-1812)
+INFO: fsg_search.c(1456): End node <sil>.62:71:97 (-1812)
+INFO: fsg_search.c(1456): End node <sil>.62:71:97 (-1812)
+INFO: fsg_search.c(1456): End node <sil>.69:71:97 (-850)
+INFO: fsg_search.c(1456): End node <sil>.69:71:97 (-850)
+INFO: fsg_search.c(1456): End node <sil>.69:71:97 (-850)
+INFO: fsg_search.c(1456): End node <sil>.69:71:97 (-850)
+INFO: fsg_search.c(1456): End node <sil>.69:71:97 (-850)
+INFO: fsg_search.c(1456): End node <sil>.69:71:97 (-850)
+INFO: fsg_search.c(1456): End node <sil>.69:71:97 (-850)
+INFO: fsg_search.c(1456): End node <sil>.63:65:97 (-817)
+INFO: fsg_search.c(1456): End node <sil>.63:65:97 (-817)
+INFO: fsg_search.c(1456): End node <sil>.63:65:97 (-817)
+INFO: fsg_search.c(1456): End node <sil>.63:65:97 (-817)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.98
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:98:98) = -505416
+INFO: ps_lattice.c(1403): Joint P(O,S) = -507647 P(S|O) = -2231
+INFO: cmn_prior.c(121): cmn_prior_update: from < 77.40 -0.68 -0.61 -0.04 -0.07  0.24  0.18 -0.90 -1.05 -0.83 -0.62  0.00  0.18 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 78.56 -1.01 -0.84 -0.10 -0.21  0.06 -0.03 -1.04 -1.14 -0.83 -0.64  0.03  0.24 >
+INFO: fsg_search.c(1032): 109 frames, 17035 HMMs (156/fr), 19757 senones (181/fr), 12113 history entries (111/fr)
+
+INFO: fsg_search.c(1417): Start node DRAW.0:19:26
+INFO: fsg_search.c(1417): Start node CAN(2).0:8:50
+INFO: fsg_search.c(1417): Start node GO.0:5:55
+INFO: fsg_search.c(1417): Start node DO.0:5:29
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:29
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:29
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:50
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:50
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:46
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:68
+INFO: fsg_search.c(1417): Start node <sil>.0:2:69
+INFO: fsg_search.c(1456): End node <sil>.99:101:108 (-811)
+INFO: fsg_search.c(1456): End node <sil>.99:101:108 (-811)
+INFO: fsg_search.c(1456): End node <sil>.99:101:108 (-811)
+INFO: fsg_search.c(1456): End node <sil>.99:101:108 (-811)
+INFO: fsg_search.c(1456): End node <sil>.99:101:108 (-811)
+INFO: fsg_search.c(1456): End node <sil>.99:101:108 (-811)
+INFO: fsg_search.c(1456): End node <sil>.99:101:108 (-811)
+INFO: fsg_search.c(1456): End node <sil>.99:101:108 (-811)
+INFO: fsg_search.c(1456): End node <sil>.99:101:108 (-811)
+INFO: fsg_search.c(1456): End node <sil>.99:101:108 (-811)
+INFO: fsg_search.c(1456): End node YEAH.24:37:108 (-2405)
+INFO: fsg_search.c(1456): End node YEAH.24:37:108 (-2405)
+INFO: fsg_search.c(1456): End node YEAH.24:37:108 (-2405)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.109
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:109:109) = -316746
+INFO: ps_lattice.c(1403): Joint P(O,S) = -327731 P(S|O) = -10985
+INFO: fsg_search.c(1032): 152 frames, 9887 HMMs (65/fr), 13524 senones (88/fr), 5018 history entries (33/fr)
+
+INFO: fsg_search.c(1417): Start node VOICE.0:15:18
+INFO: fsg_search.c(1417): Start node NOPE.0:14:35
+INFO: fsg_search.c(1417): Start node NOPE.0:14:35
+INFO: fsg_search.c(1417): Start node NOPE.0:14:35
+INFO: fsg_search.c(1417): Start node HELLO.0:13:20
+INFO: fsg_search.c(1417): Start node MOVE.0:13:39
+INFO: fsg_search.c(1417): Start node DRAW.0:11:36
+INFO: fsg_search.c(1417): Start node YEAH.0:10:151
+INFO: fsg_search.c(1417): Start node NO.0:10:25
+INFO: fsg_search.c(1417): Start node NAH.0:10:22
+INFO: fsg_search.c(1417): Start node YEAH.0:10:151
+INFO: fsg_search.c(1417): Start node NO.0:10:25
+INFO: fsg_search.c(1417): Start node NAH.0:10:22
+INFO: fsg_search.c(1417): Start node YEAH.0:10:151
+INFO: fsg_search.c(1417): Start node NO.0:10:25
+INFO: fsg_search.c(1417): Start node NAH.0:10:22
+INFO: fsg_search.c(1417): Start node CAN(2).0:9:48
+INFO: fsg_search.c(1417): Start node HEY.0:6:19
+INFO: fsg_search.c(1417): Start node GO.0:5:44
+INFO: fsg_search.c(1417): Start node DO.0:5:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:13
+INFO: fsg_search.c(1417): Start node <sil>.0:2:13
+INFO: fsg_search.c(1417): Start node <sil>.0:2:13
+INFO: fsg_search.c(1417): Start node <sil>.0:2:13
+INFO: fsg_search.c(1417): Start node <sil>.0:2:13
+INFO: fsg_search.c(1417): Start node <sil>.0:2:14
+INFO: fsg_search.c(1456): End node <sil>.137:139:151 (-840)
+INFO: fsg_search.c(1456): End node <sil>.137:139:151 (-840)
+INFO: fsg_search.c(1456): End node <sil>.137:139:151 (-840)
+INFO: fsg_search.c(1456): End node <sil>.135:137:151 (-835)
+INFO: fsg_search.c(1456): End node <sil>.135:137:151 (-835)
+INFO: fsg_search.c(1456): End node <sil>.135:137:151 (-835)
+INFO: fsg_search.c(1456): End node <sil>.135:137:151 (-835)
+INFO: fsg_search.c(1456): End node <sil>.135:137:151 (-835)
+INFO: fsg_search.c(1456): End node <sil>.135:137:151 (-835)
+INFO: fsg_search.c(1456): End node <sil>.135:137:151 (-835)
+INFO: fsg_search.c(1456): End node <sil>.135:137:151 (-835)
+INFO: fsg_search.c(1456): End node <sil>.135:137:151 (-835)
+INFO: fsg_search.c(1456): End node <sil>.135:137:151 (-835)
+INFO: fsg_search.c(1456): End node DANCE.90:101:151 (-2225)
+INFO: fsg_search.c(1456): End node YEAH.0:10:151 (-2005)
+INFO: fsg_search.c(1456): End node YEAH.0:10:151 (-2005)
+INFO: fsg_search.c(1456): End node YEAH.0:10:151 (-2005)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.152
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:152:152) = -91671
+INFO: ps_lattice.c(1403): Joint P(O,S) = -102656 P(S|O) = -10985
+INFO: cmn_prior.c(121): cmn_prior_update: from < 79.52 -0.92 -1.00 -0.15 -0.34 -0.21 -0.35 -1.27 -1.34 -0.86 -0.62  0.04  0.22 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 80.22 -1.14 -1.14 -0.18 -0.40 -0.30 -0.39 -1.37 -1.39 -0.83 -0.74 -0.02  0.16 >
+INFO: fsg_search.c(1032): 153 frames, 15756 HMMs (102/fr), 17958 senones (117/fr), 7994 history entries (52/fr)
+
+INFO: fsg_search.c(1417): Start node DRAW.0:18:23
+INFO: fsg_search.c(1417): Start node CAN(2).0:16:34
+INFO: fsg_search.c(1417): Start node GO.0:5:53
+INFO: fsg_search.c(1417): Start node DO.0:5:26
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:77
+INFO: fsg_search.c(1456): End node <sil>.129:131:152 (-810)
+INFO: fsg_search.c(1456): End node <sil>.129:131:152 (-810)
+INFO: fsg_search.c(1456): End node <sil>.129:131:152 (-810)
+INFO: fsg_search.c(1456): End node <sil>.129:131:152 (-810)
+INFO: fsg_search.c(1456): End node <sil>.129:131:152 (-810)
+INFO: fsg_search.c(1456): End node <sil>.129:131:152 (-810)
+INFO: fsg_search.c(1456): End node <sil>.129:131:152 (-810)
+INFO: fsg_search.c(1456): End node <sil>.129:131:152 (-810)
+INFO: fsg_search.c(1456): End node <sil>.129:131:152 (-810)
+INFO: fsg_search.c(1456): End node <sil>.129:131:152 (-810)
+INFO: fsg_search.c(1456): End node YEAH.14:32:152 (-3546)
+INFO: fsg_search.c(1456): End node YEAH.14:32:152 (-3546)
+INFO: fsg_search.c(1456): End node YEAH.14:32:152 (-3546)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.153
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:153:153) = -287152
+INFO: ps_lattice.c(1403): Joint P(O,S) = -298137 P(S|O) = -10985
+INFO: cmn_prior.c(121): cmn_prior_update: from < 80.22 -1.14 -1.14 -0.18 -0.40 -0.30 -0.39 -1.37 -1.39 -0.83 -0.74 -0.02  0.16 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 79.96 -1.20 -0.95 -0.24 -0.48 -0.23 -0.24 -1.27 -1.26 -0.87 -0.73 -0.01  0.08 >
+INFO: fsg_search.c(1032): 97 frames, 17726 HMMs (182/fr), 18248 senones (188/fr), 12973 history entries (133/fr)
+
+INFO: fsg_search.c(1417): Start node DO.0:5:15
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:43
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:43
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:58
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1456): End node <sil>.64:75:96 (-1816)
+INFO: fsg_search.c(1456): End node <sil>.64:75:96 (-1816)
+INFO: fsg_search.c(1456): End node <sil>.64:75:96 (-1816)
+INFO: fsg_search.c(1456): End node <sil>.63:74:96 (-1855)
+INFO: fsg_search.c(1456): End node <sil>.63:74:96 (-1855)
+INFO: fsg_search.c(1456): End node <sil>.63:74:96 (-1855)
+INFO: fsg_search.c(1456): End node <sil>.64:73:96 (-1598)
+INFO: fsg_search.c(1456): End node <sil>.63:72:96 (-1631)
+INFO: fsg_search.c(1456): End node <sil>.64:68:96 (-1004)
+INFO: fsg_search.c(1456): End node <sil>.64:68:96 (-1004)
+INFO: fsg_search.c(1456): End node <sil>.64:68:96 (-1004)
+INFO: fsg_search.c(1456): End node <sil>.64:68:96 (-1004)
+INFO: fsg_search.c(1456): End node <sil>.64:68:96 (-1004)
+INFO: fsg_search.c(1456): End node <sil>.64:68:96 (-1004)
+INFO: fsg_search.c(1456): End node <sil>.64:67:96 (-915)
+INFO: fsg_search.c(1456): End node <sil>.64:67:96 (-915)
+INFO: fsg_search.c(1456): End node <sil>.64:67:96 (-915)
+INFO: fsg_search.c(1456): End node <sil>.64:67:96 (-915)
+INFO: fsg_search.c(1456): End node <sil>.64:67:96 (-915)
+INFO: fsg_search.c(1456): End node <sil>.64:67:96 (-915)
+INFO: fsg_search.c(1456): End node <sil>.64:67:96 (-915)
+INFO: fsg_search.c(1456): End node <sil>.64:67:96 (-915)
+INFO: fsg_search.c(1456): End node <sil>.64:67:96 (-915)
+INFO: fsg_search.c(1456): End node <sil>.64:67:96 (-915)
+INFO: fsg_search.c(1456): End node <sil>.63:65:96 (-838)
+INFO: fsg_search.c(1456): End node <sil>.63:65:96 (-838)
+INFO: fsg_search.c(1456): End node <sil>.32:46:96 (-2546)
+INFO: fsg_search.c(1456): End node <sil>.32:46:96 (-2546)
+INFO: fsg_search.c(1456): End node <sil>.35:37:96 (-820)
+INFO: fsg_search.c(1456): End node <sil>.35:37:96 (-820)
+INFO: fsg_search.c(1456): End node <sil>.35:37:96 (-820)
+INFO: fsg_search.c(1456): End node <sil>.32:35:96 (-1014)
+INFO: fsg_search.c(1456): End node <sil>.32:34:96 (-909)
+INFO: fsg_search.c(1456): End node <sil>.32:34:96 (-909)
+INFO: fsg_search.c(1456): End node <sil>.32:34:96 (-909)
+INFO: fsg_search.c(1456): End node <sil>.32:34:96 (-909)
+INFO: fsg_search.c(1456): End node <sil>.32:34:96 (-909)
+INFO: fsg_search.c(1456): End node <sil>.32:34:96 (-909)
+INFO: fsg_search.c(1456): End node <sil>.32:34:96 (-909)
+INFO: fsg_search.c(1456): End node <sil>.32:34:96 (-909)
+INFO: fsg_search.c(1456): End node <sil>.32:34:96 (-909)
+INFO: fsg_search.c(1456): End node <sil>.32:34:96 (-909)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.97
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:97:97) = -276627
+INFO: ps_lattice.c(1403): Joint P(O,S) = -293631 P(S|O) = -17004
+INFO: fsg_search.c(1032): 97 frames, 19081 HMMs (196/fr), 21647 senones (223/fr), 12332 history entries (127/fr)
+
+INFO: fsg_search.c(1417): Start node DO.0:5:18
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:91
+INFO: fsg_search.c(1417): Start node <sil>.0:2:92
+INFO: fsg_search.c(1456): End node <sil>.94:96:96 (-828)
+INFO: fsg_search.c(1456): End node <sil>.94:96:96 (-828)
+INFO: fsg_search.c(1456): End node <sil>.94:96:96 (-828)
+INFO: fsg_search.c(1456): End node <sil>.94:96:96 (-828)
+INFO: fsg_search.c(1456): End node <sil>.94:96:96 (-828)
+INFO: fsg_search.c(1456): End node <sil>.94:96:96 (-828)
+INFO: fsg_search.c(1456): End node <sil>.94:96:96 (-828)
+INFO: fsg_search.c(1456): End node <sil>.94:96:96 (-828)
+INFO: fsg_search.c(1456): End node <sil>.94:96:96 (-828)
+INFO: fsg_search.c(1456): End node <sil>.94:96:96 (-828)
+INFO: fsg_search.c(1456): End node BACK.42:55:96 (-2566)
+INFO: fsg_search.c(1456): End node HEY.47:53:96 (-1255)
+INFO: fsg_search.c(1456): End node YEAH.43:49:96 (-1334)
+INFO: fsg_search.c(1456): End node YEAH.43:49:96 (-1334)
+INFO: fsg_search.c(1456): End node YEAH.43:49:96 (-1334)
+INFO: fsg_search.c(1456): End node SQUARE.27:46:96 (-3271)
+INFO: fsg_search.c(1456): End node HI.35:40:96 (-1304)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.97
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:97:97) = -294591
+INFO: ps_lattice.c(1403): Joint P(O,S) = -294808 P(S|O) = -217
+INFO: fsg_search.c(1032): 75 frames, 15080 HMMs (201/fr), 16942 senones (225/fr), 10926 history entries (145/fr)
+
+INFO: fsg_search.c(1417): Start node HELLO.0:29:39
+INFO: fsg_search.c(1417): Start node YUP.0:23:39
+INFO: fsg_search.c(1417): Start node YUP.0:23:39
+INFO: fsg_search.c(1417): Start node YUP.0:23:39
+INFO: fsg_search.c(1417): Start node HEY.0:5:35
+INFO: fsg_search.c(1417): Start node DO.0:5:17
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:61
+INFO: fsg_search.c(1417): Start node <sil>.0:2:62
+INFO: fsg_search.c(1456): End node <sil>.72:74:74 (-886)
+INFO: fsg_search.c(1456): End node <sil>.72:74:74 (-886)
+INFO: fsg_search.c(1456): End node <sil>.72:74:74 (-886)
+INFO: fsg_search.c(1456): End node <sil>.72:74:74 (-886)
+INFO: fsg_search.c(1456): End node <sil>.72:74:74 (-886)
+INFO: fsg_search.c(1456): End node <sil>.72:74:74 (-886)
+INFO: fsg_search.c(1456): End node <sil>.72:74:74 (-886)
+INFO: fsg_search.c(1456): End node <sil>.72:74:74 (-886)
+INFO: fsg_search.c(1456): End node <sil>.72:74:74 (-886)
+INFO: fsg_search.c(1456): End node <sil>.72:74:74 (-886)
+INFO: fsg_search.c(1456): End node HELLO(2).32:63:74 (-4780)
+INFO: fsg_search.c(1456): End node CAN.46:54:74 (-1588)
+INFO: fsg_search.c(1456): End node HEY.32:47:74 (-2466)
+INFO: fsg_search.c(1456): End node YEAH.24:29:74 (-1179)
+INFO: fsg_search.c(1456): End node YEAH.24:29:74 (-1179)
+INFO: fsg_search.c(1456): End node YEAH.24:29:74 (-1179)
+INFO: fsg_search.c(1456): End node HI.21:27:74 (-1444)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.75
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:75:75) = -235938
+INFO: ps_lattice.c(1403): Joint P(O,S) = -243301 P(S|O) = -7363
+INFO: fsg_search.c(1032): 153 frames, 16453 HMMs (107/fr), 19037 senones (124/fr), 10117 history entries (66/fr)
+
+INFO: fsg_search.c(1417): Start node DO.0:5:18
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:38
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:59
+INFO: fsg_search.c(1417): Start node <sil>.0:2:60
+INFO: fsg_search.c(1456): End node <sil>.131:133:152 (-876)
+INFO: fsg_search.c(1456): End node <sil>.131:133:152 (-876)
+INFO: fsg_search.c(1456): End node <sil>.131:133:152 (-876)
+INFO: fsg_search.c(1456): End node <sil>.131:133:152 (-876)
+INFO: fsg_search.c(1456): End node <sil>.131:133:152 (-876)
+INFO: fsg_search.c(1456): End node <sil>.131:133:152 (-876)
+INFO: fsg_search.c(1456): End node <sil>.131:133:152 (-876)
+INFO: fsg_search.c(1456): End node <sil>.131:133:152 (-876)
+INFO: fsg_search.c(1456): End node <sil>.131:133:152 (-876)
+INFO: fsg_search.c(1456): End node <sil>.131:133:152 (-876)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.153
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:153:153) = -944457
+INFO: ps_lattice.c(1403): Joint P(O,S) = -955442 P(S|O) = -10985
+INFO: fsg_search.c(1032): 179 frames, 17998 HMMs (100/fr), 22219 senones (124/fr), 11459 history entries (64/fr)
+
+INFO: fsg_search.c(1417): Start node DO.0:5:13
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:42
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:42
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:74
+INFO: fsg_search.c(1417): Start node <sil>.0:2:75
+INFO: fsg_search.c(1456): End node <sil>.174:176:178 (-790)
+INFO: fsg_search.c(1456): End node <sil>.174:176:178 (-790)
+INFO: fsg_search.c(1456): End node <sil>.174:176:178 (-790)
+INFO: fsg_search.c(1456): End node <sil>.174:176:178 (-790)
+INFO: fsg_search.c(1456): End node <sil>.174:176:178 (-790)
+INFO: fsg_search.c(1456): End node <sil>.174:176:178 (-790)
+INFO: fsg_search.c(1456): End node <sil>.174:176:178 (-790)
+INFO: fsg_search.c(1456): End node <sil>.174:176:178 (-790)
+INFO: fsg_search.c(1456): End node <sil>.174:176:178 (-790)
+INFO: fsg_search.c(1456): End node <sil>.174:176:178 (-790)
+INFO: fsg_search.c(1456): End node <sil>.166:170:178 (-993)
+INFO: fsg_search.c(1456): End node <sil>.166:170:178 (-993)
+INFO: fsg_search.c(1456): End node <sil>.166:170:178 (-993)
+INFO: fsg_search.c(1456): End node <sil>.166:170:178 (-993)
+INFO: fsg_search.c(1456): End node <sil>.166:170:178 (-993)
+INFO: fsg_search.c(1456): End node <sil>.166:170:178 (-993)
+INFO: fsg_search.c(1456): End node HI.33:46:178 (-2343)
+INFO: fsg_search.c(1456): End node YEAH.24:35:178 (-2167)
+INFO: fsg_search.c(1456): End node YEAH.24:35:178 (-2167)
+INFO: fsg_search.c(1456): End node YEAH.24:35:178 (-2167)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.179
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:179:179) = -248496
+INFO: ps_lattice.c(1403): Joint P(O,S) = -259481 P(S|O) = -10985
+INFO: cmn_prior.c(121): cmn_prior_update: from < 80.70 -1.99 -1.46 -0.30 -0.38 -0.20 -0.05 -1.08 -1.11 -0.70 -0.68 -0.04  0.10 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 81.55 -2.23 -1.72 -0.52 -0.63 -0.26  0.25 -0.94 -0.93 -0.69 -0.58 -0.06  0.03 >
+INFO: fsg_search.c(1032): 124 frames, 12683 HMMs (102/fr), 14473 senones (116/fr), 7638 history entries (61/fr)
+
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:47
+INFO: fsg_search.c(1417): Start node <sil>.0:2:47
+INFO: fsg_search.c(1417): Start node <sil>.0:2:47
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:39
+INFO: fsg_search.c(1417): Start node <sil>.0:2:47
+INFO: fsg_search.c(1417): Start node <sil>.0:2:39
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1417): Start node <sil>.0:2:51
+INFO: fsg_search.c(1456): End node <sil>.114:116:123 (-837)
+INFO: fsg_search.c(1456): End node <sil>.114:116:123 (-837)
+INFO: fsg_search.c(1456): End node <sil>.114:116:123 (-837)
+INFO: fsg_search.c(1456): End node <sil>.114:116:123 (-837)
+INFO: fsg_search.c(1456): End node <sil>.114:116:123 (-837)
+INFO: fsg_search.c(1456): End node <sil>.114:116:123 (-837)
+INFO: fsg_search.c(1456): End node <sil>.114:116:123 (-837)
+INFO: fsg_search.c(1456): End node <sil>.114:116:123 (-837)
+INFO: fsg_search.c(1456): End node <sil>.114:116:123 (-837)
+INFO: fsg_search.c(1456): End node <sil>.114:116:123 (-837)
+INFO: fsg_search.c(1456): End node YEAH.24:32:123 (-1721)
+INFO: fsg_search.c(1456): End node YEAH.24:32:123 (-1721)
+INFO: fsg_search.c(1456): End node YEAH.24:32:123 (-1721)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.124
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:124:124) = -222998
+INFO: ps_lattice.c(1403): Joint P(O,S) = -233983 P(S|O) = -10985
+INFO: fsg_search.c(1032): 97 frames, 21142 HMMs (217/fr), 22874 senones (235/fr), 15937 history entries (164/fr)
+
+INFO: fsg_search.c(1417): Start node FOLLOW.0:34:88
+INFO: fsg_search.c(1417): Start node FOLLOW.0:34:88
+INFO: fsg_search.c(1417): Start node YES.0:8:26
+INFO: fsg_search.c(1417): Start node YUP.0:8:31
+INFO: fsg_search.c(1417): Start node NOPE.0:8:33
+INFO: fsg_search.c(1417): Start node BACK.0:8:24
+INFO: fsg_search.c(1417): Start node MOVE.0:8:32
+INFO: fsg_search.c(1417): Start node CAN(2).0:8:29
+INFO: fsg_search.c(1417): Start node YES.0:8:26
+INFO: fsg_search.c(1417): Start node YUP.0:8:31
+INFO: fsg_search.c(1417): Start node NOPE.0:8:33
+INFO: fsg_search.c(1417): Start node YES.0:8:26
+INFO: fsg_search.c(1417): Start node YUP.0:8:31
+INFO: fsg_search.c(1417): Start node NOPE.0:8:33
+INFO: fsg_search.c(1417): Start node HI.0:5:17
+INFO: fsg_search.c(1417): Start node HEY.0:5:31
+INFO: fsg_search.c(1417): Start node YEAH.0:5:17
+INFO: fsg_search.c(1417): Start node NO.0:5:22
+INFO: fsg_search.c(1417): Start node NAH.0:5:16
+INFO: fsg_search.c(1417): Start node GO.0:5:72
+INFO: fsg_search.c(1417): Start node DO.0:5:23
+INFO: fsg_search.c(1417): Start node YEAH.0:5:17
+INFO: fsg_search.c(1417): Start node NO.0:5:22
+INFO: fsg_search.c(1417): Start node NAH.0:5:16
+INFO: fsg_search.c(1417): Start node YEAH.0:5:17
+INFO: fsg_search.c(1417): Start node NO.0:5:22
+INFO: fsg_search.c(1417): Start node NAH.0:5:16
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:8
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:8
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:78
+INFO: fsg_search.c(1417): Start node <sil>.0:2:87
+INFO: fsg_search.c(1456): End node A.94:96:96 (-580)
+INFO: fsg_search.c(1456): End node <sil>.94:96:96 (-846)
+INFO: fsg_search.c(1456): End node NO.61:77:96 (-2464)
+INFO: fsg_search.c(1456): End node YOU.72:77:96 (-995)
+INFO: fsg_search.c(1456): End node NO.61:77:96 (-2464)
+INFO: fsg_search.c(1456): End node NO.61:77:96 (-2464)
+INFO: fsg_search.c(1456): End node ME.60:65:96 (-1169)
+INFO: fsg_search.c(1456): End node MOVE.54:62:96 (-1538)
+INFO: fsg_search.c(1456): End node CAN(2).53:61:96 (-1523)
+INFO: fsg_search.c(1456): End node DO.54:59:96 (-986)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.97
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:97:97) = -475216
+INFO: ps_lattice.c(1403): Joint P(O,S) = -477695 P(S|O) = -2479
+INFO: cmn_prior.c(121): cmn_prior_update: from < 81.68 -2.19 -1.80 -0.60 -0.65 -0.25  0.18 -0.96 -0.94 -0.70 -0.56 -0.08  0.03 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 81.51 -1.33 -1.86 -0.60 -0.72 -0.26 -0.10 -1.03 -1.05 -0.91 -0.73 -0.27 -0.06 >
+INFO: fsg_search.c(1032): 188 frames, 24135 HMMs (128/fr), 28590 senones (152/fr), 17905 history entries (95/fr)
+
+ERROR: "fsg_search.c", line 1104: Final result does not match the grammar in frame 188

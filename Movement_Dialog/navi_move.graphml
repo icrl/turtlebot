@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+        http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+    <key id="d0" for="node" attr.name="dialogue" attr.type="string"/>
+    <key id="d1" for="edge" attr.name="spoken" attr.type="string"/>
+    <graph id="G" edgedefault="directed">
+
+<node id="n1"><data key="d0">root</data></node>
+<node id="n2"><data key="d0">Hi, I'm Navi.  I'm a member of Heather's lab.  Are you ready to play with me?</data></node>
+<node id="n3"><data key="d0">I can draw a square, or follow you, or dance, or you can command me to move around.  What do you want me to do?</data></node>
+<node id="n4"><data key="d0">Did you enjoy it?</data></node>
+<node id="n5"><data key="d0">Would you like me to do something else?</data></node>
+<node id="n6"><data key="d0">Bye.</data></node>
+<node id="n7"><data key="d0">I can move forward, backward, left or right. Which way do you want me to move?</data></node>
+<edge source="n1" target="n2"><data key="d1">HEY</data></edge>
+<edge source="n1" target="n2"><data key="d1">HELLO</data></edge>
+<edge source="n1" target="n2"><data key="d1">HI</data></edge>
+<edge source="n1" target="n2"><data key="d1">HEY TURTLEBOT</data></edge>
+<edge source="n1" target="n2"><data key="d1">HELLO TURTLEBOT</data></edge>
+<edge source="n1" target="n2"><data key="d1">HI TURTLEBOT</data></edge>
+<edge source="n2" target="n3"><data key="d1">YUP</data></edge>
+<edge source="n2" target="n3"><data key="d1">YEAH</data></edge>
+<edge source="n2" target="n3"><data key="d1">YES</data></edge>
+<edge source="n2" target="n6"><data key="d1">NOPE</data></edge>
+<edge source="n2" target="n6"><data key="d1">NAH</data></edge>
+<edge source="n2" target="n6"><data key="d1">NO</data></edge>
+<edge source="n3" target="n7"><data key="d1">VOICE</data></edge>
+<edge source="n3" target="n7"><data key="d1">FOLLOW VOICE</data></edge>
+<edge source="n3" target="n7"><data key="d1">VOICE COMMANDS</data></edge>
+<edge source="n3" target="n7"><data key="d1">FOLLOW VOICE COMMANDS</data></edge>
+<edge source="n7" target="n4"><data key="d1">BACK</data></edge>
+<edge source="n7" target="n4"><data key="d1">FORWARD</data></edge>
+<edge source="n7" target="n4"><data key="d1">RIGHT</data></edge>
+<edge source="n7" target="n4"><data key="d1">LEFT</data></edge>
+<edge source="n7" target="n4"><data key="d1">GO BACK</data></edge>
+<edge source="n7" target="n4"><data key="d1">GO FORWARD</data></edge>
+<edge source="n7" target="n4"><data key="d1">GO RIGHT</data></edge>
+<edge source="n7" target="n4"><data key="d1">GO LEFT</data></edge>
+<edge source="n7" target="n4"><data key="d1">MOVE BACK</data></edge>
+<edge source="n7" target="n4"><data key="d1">MOVE FORWARD</data></edge>
+<edge source="n7" target="n4"><data key="d1">MOVE RIGHT</data></edge>
+<edge source="n7" target="n4"><data key="d1">MOVE LEFT</data></edge>
+<edge source="n3" target="n4"><data key="d1">DANCE</data></edge>
+<edge source="n3" target="n4"><data key="d1">DO A DANCE</data></edge>
+<edge source="n3" target="n4"><data key="d1">SQUARE</data></edge>
+<edge source="n3" target="n4"><data key="d1">DRAW A SQUARE</data></edge>
+<edge source="n3" target="n4"><data key="d1">FOLLOW ME</data></edge>
+<edge source="n3" target="n4"><data key="d1">CAN YOU FOLLOW ME</data></edge>
+<edge source="n4" target="n5"><data key="d1">YEAH</data></edge>
+<edge source="n4" target="n5"><data key="d1">YUP</data></edge>
+<edge source="n4" target="n5"><data key="d1">YES</data></edge>
+<edge source="n4" target="n6"><data key="d1">NAH</data></edge>
+<edge source="n4" target="n6"><data key="d1">NOPE</data></edge>
+<edge source="n4" target="n6"><data key="d1">NO</data></edge>
+<edge source="n5" target="n3"><data key="d1">YEAH</data></edge>
+<edge source="n5" target="n3"><data key="d1">YUP</data></edge>
+<edge source="n5" target="n3"><data key="d1">YES</data></edge>
+<edge source="n5" target="n6"><data key="d1">NAH</data></edge>
+<edge source="n5" target="n6"><data key="d1">NOPE</data></edge>
+<edge source="n5" target="n6"><data key="d1">NO</data></edge></graph> </graphml>

@@ -1,0 +1,15 @@
+#JSGF V1.0;
+grammar hello;
+<0> = (HI|HELLO|HEY)[TURTLEBOT];
+<1> = (YES|YEAH|YUP);
+<2> = (NO|NAH|NOPE);
+<3> = [FOLLOW](VOICE)[COMMANDS];
+<4> = [MOVE|GO](LEFT|RIGHT|FORWARD|BACK);
+<5> = [DO A](DANCE);
+<6> = [DRAW A](SQUARE);
+<7> = [CAN YOU](FOLLOW ME);
+<8> = (YES|YUP|YEAH);
+<9> = (NO|NOPE|NAH);
+<10> = (YES|YUP|YEAH);
+<11> = (NO|NOPE|NAH);
+public <command> = <0> | <1> | <2> | <3> | <4> | <5> | <6> | <7> | <8> | <9> | <10> | <11>;
