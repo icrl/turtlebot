@@ -1,0 +1,542 @@
+INFO: cmd_ln.c(691): Parsing command line:
+pocketsphinx_continuous \
+	-inmic yes \
+	-jsgf grammar.jsgf \
+	-dict turtlebot_dic.dic 
+
+Current configuration:
+[NAME]		[DEFLT]		[VALUE]
+-adcdev				
+-agc		none		none
+-agcthresh	2.0		2.000000e+00
+-alpha		0.97		9.700000e-01
+-argfile			
+-ascale		20.0		2.000000e+01
+-aw		1		1
+-backtrace	no		no
+-beam		1e-48		1.000000e-48
+-bestpath	yes		yes
+-bestpathlw	9.5		9.500000e+00
+-bghist		no		no
+-ceplen		13		13
+-cmn		current		current
+-cmninit	8.0		8.0
+-compallsen	no		no
+-debug				0
+-dict				turtlebot_dic.dic
+-dictcase	no		no
+-dither		no		no
+-doublebw	no		no
+-ds		1		1
+-fdict				
+-feat		1s_c_d_dd	1s_c_d_dd
+-featparams			
+-fillprob	1e-8		1.000000e-08
+-frate		100		100
+-fsg				
+-fsgusealtpron	yes		yes
+-fsgusefiller	yes		yes
+-fwdflat	yes		yes
+-fwdflatbeam	1e-64		1.000000e-64
+-fwdflatefwid	4		4
+-fwdflatlw	8.5		8.500000e+00
+-fwdflatsfwin	25		25
+-fwdflatwbeam	7e-29		7.000000e-29
+-fwdtree	yes		yes
+-hmm				
+-infile				
+-input_endian	little		little
+-jsgf				grammar.jsgf
+-kdmaxbbi	-1		-1
+-kdmaxdepth	0		0
+-kdtree				
+-latsize	5000		5000
+-lda				
+-ldadim		0		0
+-lextreedump	0		0
+-lifter		0		0
+-lm				
+-lmctl				
+-lmname		default		default
+-logbase	1.0001		1.000100e+00
+-logfn				
+-logspec	no		no
+-lowerf		133.33334	1.333333e+02
+-lpbeam		1e-40		1.000000e-40
+-lponlybeam	7e-29		7.000000e-29
+-lw		6.5		6.500000e+00
+-maxhmmpf	-1		-1
+-maxnewoov	20		20
+-maxwpf		-1		-1
+-mdef				
+-mean				
+-mfclogdir			
+-min_endfr	0		0
+-mixw				
+-mixwfloor	0.0000001	1.000000e-07
+-mllr				
+-mmap		yes		yes
+-ncep		13		13
+-nfft		512		512
+-nfilt		40		40
+-nwpen		1.0		1.000000e+00
+-pbeam		1e-48		1.000000e-48
+-pip		1.0		1.000000e+00
+-pl_beam	1e-10		1.000000e-10
+-pl_pbeam	1e-5		1.000000e-05
+-pl_window	0		0
+-rawlogdir			
+-remove_dc	no		no
+-round_filters	yes		yes
+-samprate	16000		1.600000e+04
+-seed		-1		-1
+-sendump			
+-senlogdir			
+-senmgau			
+-silprob	0.005		5.000000e-03
+-smoothspec	no		no
+-svspec				
+-time		no		no
+-tmat				
+-tmatfloor	0.0001		1.000000e-04
+-topn		4		4
+-topn_beam	0		0
+-toprule			
+-transform	legacy		legacy
+-unit_area	yes		yes
+-upperf		6855.4976	6.855498e+03
+-usewdphones	no		no
+-uw		1.0		1.000000e+00
+-var				
+-varfloor	0.0001		1.000000e-04
+-varnorm	no		no
+-verbose	no		no
+-warp_params			
+-warp_type	inverse_linear	inverse_linear
+-wbeam		7e-29		7.000000e-29
+-wip		0.65		6.500000e-01
+-wlen		0.025625	2.562500e-02
+
+INFO: cmd_ln.c(691): Parsing command line:
+\
+	-nfilt 20 \
+	-lowerf 1 \
+	-upperf 4000 \
+	-wlen 0.025 \
+	-transform dct \
+	-round_filters no \
+	-remove_dc yes \
+	-svspec 0-12/13-25/26-38 \
+	-feat 1s_c_d_dd \
+	-agc none \
+	-cmn current \
+	-cmninit 56,-3,1 \
+	-varnorm no 
+
+Current configuration:
+[NAME]		[DEFLT]		[VALUE]
+-agc		none		none
+-agcthresh	2.0		2.000000e+00
+-alpha		0.97		9.700000e-01
+-ceplen		13		13
+-cmn		current		current
+-cmninit	8.0		56,-3,1
+-dither		no		no
+-doublebw	no		no
+-feat		1s_c_d_dd	1s_c_d_dd
+-frate		100		100
+-input_endian	little		little
+-lda				
+-ldadim		0		0
+-lifter		0		0
+-logspec	no		no
+-lowerf		133.33334	1.000000e+00
+-ncep		13		13
+-nfft		512		512
+-nfilt		40		20
+-remove_dc	no		yes
+-round_filters	yes		no
+-samprate	16000		1.600000e+04
+-seed		-1		-1
+-smoothspec	no		no
+-svspec				0-12/13-25/26-38
+-transform	legacy		dct
+-unit_area	yes		yes
+-upperf		6855.4976	4.000000e+03
+-varnorm	no		no
+-verbose	no		no
+-warp_params			
+-warp_type	inverse_linear	inverse_linear
+-wlen		0.025625	2.500000e-02
+
+INFO: acmod.c(246): Parsed model-specific feature parameters from /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/feat.params
+INFO: feat.c(713): Initializing feature stream to type: '1s_c_d_dd', ceplen=13, CMN='current', VARNORM='no', AGC='none'
+INFO: cmn.c(142): mean[0]= 12.00, mean[1..12]= 0.0
+INFO: acmod.c(167): Using subvector specification 0-12/13-25/26-38
+INFO: mdef.c(517): Reading model definition: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/mdef
+INFO: mdef.c(528): Found byte-order mark BMDF, assuming this is a binary mdef file
+INFO: bin_mdef.c(336): Reading binary model definition: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/mdef
+INFO: bin_mdef.c(513): 50 CI-phone, 143047 CD-phone, 3 emitstate/phone, 150 CI-sen, 5150 Sen, 27135 Sen-Seq
+INFO: tmat.c(205): Reading HMM transition probability matrices: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/transition_matrices
+INFO: acmod.c(121): Attempting to use SCHMM computation module
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/means
+INFO: ms_gauden.c(292): 1 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(198): Reading mixture gaussian parameter: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/variances
+INFO: ms_gauden.c(292): 1 codebook, 3 feature, size: 
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(294):  256x13
+INFO: ms_gauden.c(354): 0 variance values floored
+INFO: s2_semi_mgau.c(903): Loading senones from dump file /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/sendump
+INFO: s2_semi_mgau.c(927): BEGIN FILE FORMAT DESCRIPTION
+INFO: s2_semi_mgau.c(1022): Using memory-mapped I/O for senones
+INFO: s2_semi_mgau.c(1296): Maximum top-N: 4 Top-N beams: 0 0 0
+INFO: dict.c(317): Allocating 4132 * 32 bytes (129 KiB) for word entries
+INFO: dict.c(332): Reading main dictionary: turtlebot_dic.dic
+INFO: dict.c(211): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(335): 25 words read
+INFO: dict.c(341): Reading filler dictionary: /usr/share/pocketsphinx/model/hmm/en_US/hub4wsj_sc_8k/noisedict
+INFO: dict.c(211): Allocated 0 KiB for strings, 0 KiB for phones
+INFO: dict.c(344): 11 words read
+INFO: dict2pid.c(396): Building PID tables for dictionary
+INFO: dict2pid.c(404): Allocating 50^3 * 2 bytes (244 KiB) for word-initial triphones
+INFO: dict2pid.c(131): Allocated 60400 bytes (58 KiB) for word-final triphones
+INFO: dict2pid.c(195): Allocated 60400 bytes (58 KiB) for single-phone word triphones
+INFO: fsg_search.c(145): FSG(beam: -1080, pbeam: -1080, wbeam: -634; wip: -26, pip: 0)
+INFO: jsgf.c(581): Defined rule: <hello.g00000>
+INFO: jsgf.c(581): Defined rule: <hello.g00001>
+INFO: jsgf.c(581): Defined rule: <hello.0>
+INFO: jsgf.c(581): Defined rule: <hello.g00003>
+INFO: jsgf.c(581): Defined rule: <hello.g00004>
+INFO: jsgf.c(581): Defined rule: <hello.1>
+INFO: jsgf.c(581): Defined rule: <hello.g00006>
+INFO: jsgf.c(581): Defined rule: <hello.2>
+INFO: jsgf.c(581): Defined rule: <hello.g00008>
+INFO: jsgf.c(581): Defined rule: <hello.3>
+INFO: jsgf.c(581): Defined rule: <hello.4>
+INFO: jsgf.c(581): Defined rule: <hello.5>
+INFO: jsgf.c(581): Defined rule: PUBLIC <hello.command>
+INFO: fsg_model.c(215): Computing transitive closure for null transitions
+INFO: fsg_model.c(270): 60 null transitions added
+INFO: fsg_model.c(421): Adding silence transitions for <sil> to FSG
+INFO: fsg_model.c(441): Added 49 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++NOISE++ to FSG
+INFO: fsg_model.c(441): Added 49 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++BREATH++ to FSG
+INFO: fsg_model.c(441): Added 49 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++SMACK++ to FSG
+INFO: fsg_model.c(441): Added 49 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++COUGH++ to FSG
+INFO: fsg_model.c(441): Added 49 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++LAUGH++ to FSG
+INFO: fsg_model.c(441): Added 49 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++TONE++ to FSG
+INFO: fsg_model.c(441): Added 49 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++UH++ to FSG
+INFO: fsg_model.c(441): Added 49 silence word transitions
+INFO: fsg_model.c(421): Adding silence transitions for ++UM++ to FSG
+INFO: fsg_model.c(441): Added 49 silence word transitions
+INFO: fsg_search.c(366): Added 6 alternate word transitions
+INFO: fsg_lextree.c(108): Allocated 4998 bytes (4 KiB) for left and right context phones
+INFO: fsg_lextree.c(253): 568 HMM nodes in lextree (487 leaves)
+INFO: fsg_lextree.c(255): Allocated 72704 bytes (71 KiB) for all lextree nodes
+INFO: fsg_lextree.c(258): Allocated 62336 bytes (60 KiB) for lextree leafnodes
+INFO: continuous.c(371): pocketsphinx_continuous COMPILED ON: Dec 22 2013, AT: 20:43:21
+
+INFO: fsg_search.c(1032): 88 frames, 5481 HMMs (62/fr), 9947 senones (113/fr), 2798 history entries (31/fr)
+
+INFO: fsg_search.c(1417): Start node DELIVER.0:31:48
+INFO: fsg_search.c(1417): Start node HELLO.0:24:87
+INFO: fsg_search.c(1417): Start node HI.0:5:23
+INFO: fsg_search.c(1417): Start node HEY.0:5:24
+INFO: fsg_search.c(1417): Start node TWO.0:5:16
+INFO: fsg_search.c(1417): Start node TWO.0:5:16
+INFO: fsg_search.c(1417): Start node NO.0:5:17
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:24
+INFO: fsg_search.c(1417): Start node <sil>.0:2:25
+INFO: fsg_search.c(1456): End node <sil>.85:87:87 (-806)
+INFO: fsg_search.c(1456): End node <sil>.85:87:87 (-806)
+INFO: fsg_search.c(1456): End node <sil>.85:87:87 (-806)
+INFO: fsg_search.c(1456): End node <sil>.85:87:87 (-806)
+INFO: fsg_search.c(1456): End node <sil>.85:87:87 (-806)
+INFO: fsg_search.c(1456): End node <sil>.85:87:87 (-806)
+INFO: fsg_search.c(1456): End node <sil>.85:87:87 (-806)
+INFO: fsg_search.c(1456): End node HELLO.0:24:87 (-3994)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.88
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:88:88) = -204492
+INFO: ps_lattice.c(1403): Joint P(O,S) = -204492 P(S|O) = 0
+INFO: fsg_search.c(1032): 208 frames, 6686 HMMs (32/fr), 12294 senones (59/fr), 4866 history entries (23/fr)
+
+INFO: fsg_search.c(1417): Start node GUIDE.0:27:35
+INFO: fsg_search.c(1417): Start node HI.0:5:9
+INFO: fsg_search.c(1417): Start node HEY.0:5:15
+INFO: fsg_search.c(1417): Start node TWO.0:5:26
+INFO: fsg_search.c(1417): Start node TWO.0:5:26
+INFO: fsg_search.c(1417): Start node NO.0:5:21
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1417): Start node <sil>.0:2:48
+INFO: fsg_search.c(1456): End node <sil>.205:207:207 (-874)
+INFO: fsg_search.c(1456): End node <sil>.205:207:207 (-874)
+INFO: fsg_search.c(1456): End node <sil>.205:207:207 (-874)
+INFO: fsg_search.c(1456): End node NO.41:61:207 (-2892)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.208
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:208:208) = -497049
+INFO: ps_lattice.c(1403): Joint P(O,S) = -497049 P(S|O) = 0
+INFO: cmn_prior.c(121): cmn_prior_update: from < 56.00 -3.00  1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 57.09  4.30 -2.35 -1.56  0.63  1.38  1.22  0.81  0.17  0.18  0.10  0.53  0.06 >
+INFO: fsg_search.c(1032): 89 frames, 4869 HMMs (54/fr), 8290 senones (93/fr), 2471 history entries (27/fr)
+
+INFO: fsg_search.c(1417): Start node GUIDE.0:23:32
+INFO: fsg_search.c(1417): Start node HI.0:5:7
+INFO: fsg_search.c(1417): Start node HEY.0:5:12
+INFO: fsg_search.c(1417): Start node TWO.0:5:19
+INFO: fsg_search.c(1417): Start node TWO.0:5:19
+INFO: fsg_search.c(1417): Start node NO.0:5:17
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1417): Start node <sil>.0:2:32
+INFO: fsg_search.c(1456): End node <sil>.70:72:88 (-772)
+INFO: fsg_search.c(1456): End node <sil>.70:72:88 (-772)
+INFO: fsg_search.c(1456): End node <sil>.67:69:88 (-809)
+INFO: fsg_search.c(1456): End node <sil>.67:69:88 (-809)
+INFO: fsg_search.c(1456): End node <sil>.67:69:88 (-809)
+INFO: fsg_search.c(1456): End node <sil>.67:69:88 (-809)
+INFO: fsg_search.c(1456): End node <sil>.67:69:88 (-809)
+INFO: fsg_search.c(1456): End node <sil>.67:69:88 (-809)
+INFO: fsg_search.c(1456): End node <sil>.67:69:88 (-809)
+INFO: fsg_search.c(1456): End node HELLO.16:35:88 (-3366)
+INFO: fsg_search.c(1456): End node NO.14:19:88 (-1277)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.89
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:89:89) = -186521
+INFO: ps_lattice.c(1403): Joint P(O,S) = -186521 P(S|O) = 0
+INFO: cmn_prior.c(121): cmn_prior_update: from < 57.09  4.30 -2.35 -1.56  0.63  1.38  1.22  0.81  0.17  0.18  0.10  0.53  0.06 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 59.00  3.54 -1.85 -1.31  0.16  1.12  0.89  0.39 -0.15  0.15  0.03  0.71  0.08 >
+INFO: fsg_search.c(1032): 132 frames, 5362 HMMs (40/fr), 11949 senones (90/fr), 2511 history entries (19/fr)
+
+INFO: fsg_search.c(1417): Start node YES.0:8:28
+INFO: fsg_search.c(1417): Start node HI.0:5:17
+INFO: fsg_search.c(1417): Start node HEY.0:5:29
+INFO: fsg_search.c(1417): Start node TWO.0:5:22
+INFO: fsg_search.c(1417): Start node TWO.0:5:22
+INFO: fsg_search.c(1417): Start node NO.0:5:12
+INFO: fsg_search.c(1417): Start node <sil>.0:2:30
+INFO: fsg_search.c(1417): Start node <sil>.0:2:30
+INFO: fsg_search.c(1417): Start node <sil>.0:2:30
+INFO: fsg_search.c(1417): Start node <sil>.0:2:30
+INFO: fsg_search.c(1417): Start node <sil>.0:2:30
+INFO: fsg_search.c(1417): Start node <sil>.0:2:30
+INFO: fsg_search.c(1456): End node <sil>.122:130:131 (-1458)
+INFO: fsg_search.c(1456): End node <sil>.121:125:131 (-1045)
+INFO: fsg_search.c(1456): End node <sil>.121:123:131 (-835)
+INFO: fsg_search.c(1456): End node <sil>.121:123:131 (-835)
+INFO: fsg_search.c(1456): End node <sil>.121:123:131 (-835)
+INFO: fsg_search.c(1456): End node <sil>.121:123:131 (-835)
+INFO: fsg_search.c(1456): End node CAITLIN.72:110:131 (-6698)
+INFO: fsg_search.c(1456): End node RAEESA.72:98:131 (-4800)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.132
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:132:132) = -736970
+INFO: ps_lattice.c(1403): Joint P(O,S) = -736971 P(S|O) = -1
+INFO: fsg_search.c(1032): 853 frames, 16435 HMMs (19/fr), 31107 senones (36/fr), 12443 history entries (14/fr)
+
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1417): Start node <sil>.0:2:45
+INFO: fsg_search.c(1456): End node <sil>.763:781:852 (-2818)
+INFO: fsg_search.c(1456): End node <sil>.763:781:852 (-2818)
+INFO: fsg_search.c(1456): End node <sil>.763:781:852 (-2818)
+INFO: fsg_search.c(1456): End node <sil>.763:781:852 (-2818)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.853
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:853:853) = -6447103
+INFO: ps_lattice.c(1403): Joint P(O,S) = -6448177 P(S|O) = -1074
+INFO: cmn_prior.c(121): cmn_prior_update: from < 64.03  1.48 -2.25 -1.82 -1.38  1.08  0.78  0.92  0.13  0.11  0.08  0.56  0.23 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 64.65  1.56 -2.28 -1.83 -1.42  0.83  0.78  0.87 -0.15  0.02  0.08  0.51  0.29 >
+INFO: fsg_search.c(1032): 90 frames, 2214 HMMs (24/fr), 4944 senones (54/fr), 761 history entries (8/fr)
+
+INFO: fsg_search.c(1417): Start node DELIVER.0:57:89
+INFO: fsg_search.c(1456): End node <sil>.82:84:89 (-803)
+INFO: fsg_search.c(1456): End node <sil>.82:84:89 (-803)
+INFO: fsg_search.c(1456): End node <sil>.82:84:89 (-803)
+INFO: fsg_search.c(1456): End node <sil>.82:84:89 (-803)
+INFO: fsg_search.c(1680): lattice start node DELIVER.0 end node </s>.90
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:90:90) = -574720
+INFO: ps_lattice.c(1403): Joint P(O,S) = -574720 P(S|O) = 0
+INFO: cmn_prior.c(121): cmn_prior_update: from < 64.65  1.56 -2.28 -1.83 -1.42  0.83  0.78  0.87 -0.15  0.02  0.08  0.51  0.29 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 63.92  1.71 -1.99 -1.51 -1.42  0.66  0.73  0.87  0.00  0.08  0.12  0.39  0.39 >
+INFO: fsg_search.c(1032): 193 frames, 7560 HMMs (39/fr), 15072 senones (78/fr), 2732 history entries (14/fr)
+
+INFO: fsg_search.c(1417): Start node GUIDE.0:31:54
+INFO: fsg_search.c(1417): Start node <sil>.0:2:40
+INFO: fsg_search.c(1417): Start node <sil>.0:2:40
+INFO: fsg_search.c(1417): Start node <sil>.0:2:40
+INFO: fsg_search.c(1417): Start node <sil>.0:2:40
+INFO: fsg_search.c(1417): Start node <sil>.0:2:40
+INFO: fsg_search.c(1417): Start node <sil>.0:2:40
+INFO: fsg_search.c(1417): Start node <sil>.0:2:40
+INFO: fsg_search.c(1417): Start node <sil>.0:2:40
+INFO: fsg_search.c(1417): Start node <sil>.0:2:40
+INFO: fsg_search.c(1417): Start node <sil>.0:2:40
+INFO: fsg_search.c(1417): Start node <sil>.0:2:40
+INFO: fsg_search.c(1456): End node <sil>.179:181:192 (-781)
+INFO: fsg_search.c(1456): End node <sil>.179:181:192 (-781)
+INFO: fsg_search.c(1456): End node <sil>.179:181:192 (-781)
+INFO: fsg_search.c(1456): End node <sil>.179:181:192 (-781)
+INFO: fsg_search.c(1456): End node HUNDRED(2).125:153:192 (-4884)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.193
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:193:193) = -1163211
+INFO: ps_lattice.c(1403): Joint P(O,S) = -1163211 P(S|O) = 0
+INFO: cmn_prior.c(121): cmn_prior_update: from < 66.46  0.89 -2.37 -2.04 -1.92  1.11  0.74  0.89  0.35  0.26  0.16  0.39  0.18 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 66.37  0.93 -2.34 -1.94 -1.84  1.19  0.81  0.74  0.32  0.25  0.10  0.40  0.23 >
+INFO: fsg_search.c(1032): 546 frames, 17310 HMMs (31/fr), 34186 senones (62/fr), 12193 history entries (22/fr)
+
+INFO: fsg_search.c(1417): Start node <sil>.0:2:79
+INFO: fsg_search.c(1417): Start node <sil>.0:2:79
+INFO: fsg_search.c(1417): Start node <sil>.0:2:79
+INFO: fsg_search.c(1417): Start node <sil>.0:2:79
+INFO: fsg_search.c(1417): Start node <sil>.0:2:79
+INFO: fsg_search.c(1417): Start node <sil>.0:2:79
+INFO: fsg_search.c(1417): Start node <sil>.0:2:79
+INFO: fsg_search.c(1417): Start node <sil>.0:2:79
+INFO: fsg_search.c(1417): Start node <sil>.0:2:79
+INFO: fsg_search.c(1417): Start node <sil>.0:2:79
+INFO: fsg_search.c(1417): Start node <sil>.0:2:81
+INFO: fsg_search.c(1456): End node <sil>.479:481:545 (-776)
+INFO: fsg_search.c(1456): End node <sil>.479:481:545 (-776)
+INFO: fsg_search.c(1456): End node <sil>.479:481:545 (-776)
+INFO: fsg_search.c(1456): End node <sil>.479:481:545 (-776)
+INFO: fsg_search.c(1456): End node TURTLEBOT.150:197:545 (-7675)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.546
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:546:546) = -1581363
+INFO: ps_lattice.c(1403): Joint P(O,S) = -1581363 P(S|O) = 0
+INFO: fsg_search.c(1032): 75 frames, 2586 HMMs (34/fr), 4890 senones (65/fr), 1072 history entries (14/fr)
+
+INFO: fsg_search.c(1417): Start node <sil>.0:2:34
+INFO: fsg_search.c(1417): Start node <sil>.0:2:34
+INFO: fsg_search.c(1417): Start node <sil>.0:2:34
+INFO: fsg_search.c(1417): Start node <sil>.0:2:34
+INFO: fsg_search.c(1417): Start node <sil>.0:2:34
+INFO: fsg_search.c(1417): Start node <sil>.0:2:34
+INFO: fsg_search.c(1417): Start node <sil>.0:2:34
+INFO: fsg_search.c(1417): Start node <sil>.0:2:34
+INFO: fsg_search.c(1456): End node <sil>.70:72:74 (-818)
+INFO: fsg_search.c(1456): End node <sil>.70:72:74 (-818)
+INFO: fsg_search.c(1456): End node <sil>.70:72:74 (-818)
+INFO: fsg_search.c(1456): End node NO.25:32:74 (-1432)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.75
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:75:75) = -247346
+INFO: ps_lattice.c(1403): Joint P(O,S) = -247346 P(S|O) = 0
+INFO: fsg_search.c(1032): 201 frames, 5671 HMMs (28/fr), 12226 senones (60/fr), 2662 history entries (13/fr)
+
+INFO: fsg_search.c(1417): Start node GUIDE.0:30:112
+INFO: fsg_search.c(1417): Start node <sil>.0:2:28
+INFO: fsg_search.c(1417): Start node <sil>.0:2:28
+INFO: fsg_search.c(1417): Start node <sil>.0:2:28
+INFO: fsg_search.c(1417): Start node <sil>.0:2:28
+INFO: fsg_search.c(1417): Start node <sil>.0:2:28
+INFO: fsg_search.c(1417): Start node <sil>.0:2:28
+INFO: fsg_search.c(1417): Start node <sil>.0:2:28
+INFO: fsg_search.c(1417): Start node <sil>.0:2:30
+INFO: fsg_search.c(1456): End node <sil>.197:199:200 (-806)
+INFO: fsg_search.c(1456): End node <sil>.197:199:200 (-806)
+INFO: fsg_search.c(1456): End node <sil>.197:199:200 (-806)
+INFO: fsg_search.c(1456): End node <sil>.197:199:200 (-806)
+INFO: fsg_search.c(1456): End node TURTLEBOT.33:87:200 (-8900)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.201
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:201:201) = -702105
+INFO: ps_lattice.c(1403): Joint P(O,S) = -702105 P(S|O) = 0
+INFO: cmn_prior.c(121): cmn_prior_update: from < 65.55  1.28 -2.01 -1.72 -1.61  1.03  0.75  0.63  0.20  0.22  0.05  0.37  0.27 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 66.24  1.55 -2.01 -1.34 -1.44  0.51  0.34  0.24  0.04  0.15 -0.01  0.31  0.46 >
+INFO: fsg_search.c(1032): 119 frames, 5919 HMMs (49/fr), 10978 senones (92/fr), 1922 history entries (16/fr)
+
+INFO: fsg_search.c(1417): Start node TWO.0:5:14
+INFO: fsg_search.c(1417): Start node TWO.0:5:14
+INFO: fsg_search.c(1417): Start node <sil>.0:2:36
+INFO: fsg_search.c(1417): Start node <sil>.0:2:36
+INFO: fsg_search.c(1417): Start node <sil>.0:2:36
+INFO: fsg_search.c(1417): Start node <sil>.0:2:36
+INFO: fsg_search.c(1417): Start node <sil>.0:2:36
+INFO: fsg_search.c(1417): Start node <sil>.0:2:36
+INFO: fsg_search.c(1417): Start node <sil>.0:2:36
+INFO: fsg_search.c(1417): Start node <sil>.0:2:37
+INFO: fsg_search.c(1456): End node <sil>.110:112:118 (-790)
+INFO: fsg_search.c(1456): End node <sil>.110:112:118 (-790)
+INFO: fsg_search.c(1456): End node <sil>.110:112:118 (-790)
+INFO: fsg_search.c(1456): End node <sil>.110:112:118 (-790)
+INFO: fsg_search.c(1456): End node <sil>.110:112:118 (-790)
+INFO: fsg_search.c(1456): End node <sil>.110:112:118 (-790)
+INFO: fsg_search.c(1456): End node HUNDRED(3).84:102:118 (-3120)
+INFO: fsg_search.c(1456): End node ONE(2).69:87:118 (-2923)
+INFO: fsg_search.c(1456): End node ONE.75:86:118 (-1949)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.119
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:119:119) = -617709
+INFO: ps_lattice.c(1403): Joint P(O,S) = -621360 P(S|O) = -3651
+INFO: cmn_prior.c(121): cmn_prior_update: from < 68.19  0.89 -2.58 -2.07 -1.95  1.15  0.35  0.39  0.15  0.30 -0.06  0.23  0.33 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 67.33  0.66 -2.18 -1.86 -2.13  1.22  0.53  0.36  0.16  0.43 -0.16  0.38  0.34 >
+INFO: fsg_search.c(1032): 581 frames, 14100 HMMs (24/fr), 27110 senones (46/fr), 8130 history entries (13/fr)
+
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1417): Start node <sil>.0:2:49
+INFO: fsg_search.c(1456): End node <sil>.316:330:580 (-1934)
+INFO: fsg_search.c(1456): End node <sil>.316:330:580 (-1934)
+INFO: fsg_search.c(1456): End node <sil>.316:330:580 (-1934)
+INFO: fsg_search.c(1456): End node <sil>.316:330:580 (-1934)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.581
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:581:581) = -2581553
+INFO: ps_lattice.c(1403): Joint P(O,S) = -2581553 P(S|O) = 0
+INFO: cmn_prior.c(121): cmn_prior_update: from < 66.73  0.77 -2.01 -1.74 -2.07  1.17  0.52  0.33  0.17  0.45 -0.15  0.39  0.35 >
+INFO: cmn_prior.c(139): cmn_prior_update: to   < 66.47  0.71 -1.72 -1.44 -2.04  1.11  0.47  0.17  0.18  0.47 -0.17  0.30  0.35 >
+INFO: fsg_search.c(1032): 98 frames, 3052 HMMs (31/fr), 6142 senones (62/fr), 1215 history entries (12/fr)
+
+INFO: fsg_search.c(1417): Start node YES.0:10:97
+INFO: fsg_search.c(1417): Start node <sil>.0:2:33
+INFO: fsg_search.c(1417): Start node <sil>.0:2:33
+INFO: fsg_search.c(1417): Start node <sil>.0:2:33
+INFO: fsg_search.c(1417): Start node <sil>.0:2:33
+INFO: fsg_search.c(1417): Start node <sil>.0:2:33
+INFO: fsg_search.c(1417): Start node <sil>.0:2:33
+INFO: fsg_search.c(1417): Start node <sil>.0:2:33
+INFO: fsg_search.c(1417): Start node <sil>.0:2:34
+INFO: fsg_search.c(1456): End node <sil>.75:77:97 (-772)
+INFO: fsg_search.c(1456): End node <sil>.75:77:97 (-772)
+INFO: fsg_search.c(1456): End node <sil>.75:77:97 (-772)
+INFO: fsg_search.c(1456): End node YES.0:10:97 (-2007)
+INFO: fsg_search.c(1680): lattice start node <s>.0 end node </s>.98
+INFO: ps_lattice.c(1365): Normalizer P(O) = alpha(</s>:98:98) = -102758
+INFO: ps_lattice.c(1403): Joint P(O,S) = -102758 P(S|O) = 0

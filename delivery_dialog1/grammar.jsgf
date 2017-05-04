@@ -1,0 +1,9 @@
+#JSGF V1.0;
+grammar hello;
+<0> = (HI|HELLO|HEY|GREETINGS)[TURTLEBOT];
+<1> = (MY NAME IS)(CAITLIN|RAEESA|REBECCA|MAHIMA|HEATHER);
+<2> = (DELIVER|GUIDE);
+<3> = (TWO HUNDRED|TWO ONE ONE);
+<4> = YES;
+<5> = NO;
+public <command> = <0> | <1> | <2> | <3> | <4> | <5>;

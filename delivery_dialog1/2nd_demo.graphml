@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+        http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+    <key id="d0" for="node" attr.name="dialogue" attr.type="string"/>
+    <key id="d1" for="edge" attr.name="spoken" attr.type="string"/>
+    <graph id="G" edgedefault="directed"><node id="n1"><data key="d0">root</data></node>
+
+<node id="n2"><data key="d0">Hello! I am a turtlebot! What is your name?</data></node>
+<edge source="n1" target="n2">
+<data key="d1">HI</data>
+</edge>
+<edge source="n1" target="n2">
+<data key="d1">HI TURTLEBOT</data>
+</edge>
+<edge source="n1" target="n2">
+<data key="d1">HELLO</data>
+</edge>
+<edge source="n1" target="n2">
+<data key="d1">HELLO TURTLEBOT</data>
+</edge>
+<edge source="n1" target="n2">
+<data key="d1">HEY</data>
+</edge>
+<edge source="n1" target="n2">
+<data key="d1">HEY TURTLEBOT</data>
+</edge>
+<edge source="n1" target="n2">
+<data key="d1">GREETINGS</data>
+</edge>
+<edge source="n1" target="n2">
+<data key="d1">GREETINGS TURTLEBOT</data>
+</edge>
+<node id="n3"><data key="d0">I am a part of Heather's research team. I can deliver items, or guide you to rooms. What would you like me to do?</data></node>
+<edge source="n2" target="n3">
+<data key="d1">MY NAME IS HEATHER</data>
+</edge>
+<edge source="n2" target="n3">
+<data key="d1">MY NAME IS RAEESA</data>
+</edge>
+<edge source="n2" target="n3">
+<data key="d1">MY NAME IS CAITLIN</data>
+</edge>
+<edge source="n2" target="n3">
+<data key="d1">MY NAME IS REBECCA</data>
+</edge>
+<edge source="n2" target="n3">
+<data key="d1">ME NAME IS MAHIMA</data>
+</edge>
+<edge source="n2" target="n3">
+<data key="d1">HEY TURTLEBOT</data>
+</edge>
+
+<node id="n4"><data key="d0">WHICH ROOM</data></node>
+<edge source="n3" target="n4">
+<data key="d1">DELIVER</data>
+</edge>
+<edge source="n3" target="n4">
+<data key="d1">GUIDE</data>
+</edge>
+
+<node id="n5"><data key="d0">You want me to guide you to room *. Is this information correct?</data></node>
+<edge source="n4" target="n5">
+<data key="d1">TWO HUNDRED</data>
+</edge>
+<edge source="n4" target="n5">
+<data key="d1">TWO ONE ONE</data>
+</edge>
+
+<node id="n7"><data key="d0">Hold on! Let me calculate the path. Here I go!</data></node>
+<edge source="n5" target="n7">
+<data key="d1">YES</data>
+</edge>
+<edge source="n5" target="n4">
+<data key="d1">NO</data>
+</edge></graph></graphml>
